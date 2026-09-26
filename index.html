@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Claude Companion</title>
+<meta name="description" content="A tiny pixel roommate. 190 moves and 134 looks, drawn live from code in an ASCII world.">
+<meta property="og:title" content="Claude Companion">
+<meta property="og:description" content="A tiny pixel roommate. 190 moves and 134 looks, drawn live from code in an ASCII world.">
+<meta property="og:image" content="assets/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="color-scheme" content="light dark">
+<link rel="icon" href="assets/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Martian+Mono:wdth,wght@75..112.5,300..700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<pre id="welt" aria-hidden="true"></pre>
+
+<nav class="leiste" aria-label="Main">
+  <a href="#moves" data-t="navMoves">Moves</a>
+  <a href="#wardrobe" data-t="navWardrobe">Wardrobe</a>
+  <a href="#dressing-room" data-t="navRoom">Dressing room</a>
+  <a href="https://github.com/Silvertree2010/claude-companion" data-t="navGithub">GitHub</a>
+  <button type="button" id="sprache" aria-label="Switch language">DE</button>
+  <button type="button" id="thema" aria-label="Switch light or dark">Dark</button>
+</nav>
+
+<header class="held" id="start">
+  <h1 class="versteckt">Claude Companion</h1>
+  <div class="held-text">
+    <p class="unterzeile" data-t="tagline">A tiny pixel roommate. 190 moves, 134 looks, drawn live from code.</p>
+    <div class="knoepfe">
+      <a class="knopf voll" href="#moves" data-t="ctaMoves">Browse the moves</a>
+      <a class="knopf" href="#dressing-room" data-t="ctaRoom">Dress it up</a>
+    </div>
+  </div>
+  <canvas id="wanderer" width="48" height="40" aria-hidden="true"></canvas>
+  <p class="scrollhinweis" data-t="scroll">scroll to dig deeper</p>
+</header>
+
+<main>
+  <section class="blatt" id="moves" aria-labelledby="moves-titel">
+    <div class="blatt-kopf">
+      <h2 id="moves-titel"><span class="zahl">190</span> <span data-t="movesTitle">moves</span></h2>
+      <p data-t="movesIntro">Every tile is alive. Click one and your companion in the corner tries it right away.</p>
+    </div>
+    <div class="werkzeug">
+      <div class="gruppen" id="gruppen-b" role="group" aria-label="Filter moves"></div>
+      <label class="suche"><span class="versteckt" data-t="search">Search</span><input type="search" id="suche-b" data-tp="searchMoves" placeholder="Search moves" autocomplete="off"></label>
+    </div>
+    <div class="kasten" id="kasten-b"></div>
+    <p class="leer" id="leer-b" hidden data-t="empty">Nothing found. Try another word.</p>
+  </section>
+
+  <section class="blatt" id="wardrobe" aria-labelledby="wardrobe-titel">
+    <div class="blatt-kopf">
+      <h2 id="wardrobe-titel"><span class="zahl">134</span> <span data-t="looksTitle">looks</span></h2>
+      <p data-t="looksIntro">Colors, hats, glasses and a few questionable outfits. Click to put it on, click again to take it off.</p>
+    </div>
+    <div class="werkzeug">
+      <div class="gruppen" id="gruppen-a" role="group" aria-label="Filter looks"></div>
+      <label class="suche"><span class="versteckt" data-t="search">Search</span><input type="search" id="suche-a" data-tp="searchLooks" placeholder="Search looks" autocomplete="off"></label>
+    </div>
+    <div class="kasten" id="kasten-a"></div>
+    <p class="leer" id="leer-a" hidden data-t="empty">Nothing found. Try another word.</p>
+  </section>
+
+  <section class="blatt" id="dressing-room" aria-labelledby="room-titel">
+    <div class="blatt-kopf">
+      <h2 id="room-titel" data-t="roomTitle">Dressing room</h2>
+      <p data-t="roomIntro">Build an outfit, pick a move, then share the link or take the pixels home.</p>
+    </div>
+    <div class="raum">
+      <div class="buehne-rahmen">
+        <canvas id="buehne" width="48" height="40" aria-label="Your companion"></canvas>
+        <p class="buehne-name" id="buehne-name" aria-live="polite"></p>
+      </div>
+      <form class="regler" id="regler" onsubmit="return false">
+        <label><span data-t="slotMove">Move</span><select id="wahl-move"></select></label>
+        <label><span data-t="slotSkin">Color</span><select id="wahl-skin" data-slot="skin"></select></label>
+        <label><span data-t="slotKopf">Headwear</span><select id="wahl-kopf" data-slot="kopf"></select></label>
+        <label><span data-t="slotAugen">Eyewear</span><select id="wahl-augen" data-slot="augen"></select></label>
+        <label><span data-t="slotGesicht">Face</span><select id="wahl-gesicht" data-slot="gesicht"></select></label>
+        <label><span data-t="slotHals">Neck</span><select id="wahl-hals" data-slot="hals"></select></label>
+        <label><span data-t="slotKoerper">Outfit</span><select id="wahl-koerper" data-slot="koerper"></select></label>
+        <div class="aktionen">
+          <button type="button" class="knopf voll" id="wuerfeln" data-t="randomize">Randomize</button>
+          <button type="button" class="knopf" id="tag" data-t="daily">Outfit of the day</button>
+          <button type="button" class="knopf" id="teilen" data-t="share">Copy link</button>
+          <button type="button" class="knopf" id="png" data-t="png">Save PNG</button>
+          <button type="button" class="knopf" id="sheet" data-t="sheet">Save sprite sheet</button>
+        </div>
+        <p class="hinweis" id="hinweis" aria-live="polite"></p>
+      </form>
+    </div>
+  </section>
+
+  <section class="blatt schmal" id="how" aria-labelledby="how-titel">
+    <div class="blatt-kopf">
+      <h2 id="how-titel" data-t="howTitle">How it works</h2>
+    </div>
+    <div class="spalten">
+      <pre class="rig" aria-label="The rig: a body, two arms, four legs, two eyes">       .------------.
+  [==] |  ▌      ▌  | [==]   arms
+       |   eyes     |
+       |            |
+       '------------'
+         ▌▌ ▌▌  ▌▌ ▌▌        legs
+  48 × 40 pixels, no image files</pre>
+      <div>
+        <p data-t="how1">There are no sprite sheets. The companion is a little rig of rectangles: a body, two arms, four legs and two eyes, redrawn twelve times a second.</p>
+        <p data-t="how2">Every move is one small function that bends that rig over time. Hats, glasses and scarves are tiny pixel maps pinned to the right spot.</p>
+        <pre class="code"><code>neu("Moonwalk", "Unterwegs", (p, t) => {
+  gehen(p, t, 1.5);
+  p.augen = "zu";
+  p.fx.push(fx("noten"));
+}, { laeuft: -6 });</code></pre>
+        <p class="leise" data-t="how3">The ASCII world behind this page is generated too. Keep scrolling, it gets deep.</p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="fuss">
+  <p data-t="footer1">Unofficial fan project. Not affiliated with or endorsed by Anthropic. Claude is a trademark of Anthropic.</p>
+  <p data-t="footer2">The look is inspired by Claude FM, the lo-fi stream behind /radio in Claude Code.</p>
+  <p><a href="https://github.com/Silvertree2010/claude-companion">GitHub</a>, <span data-t="license">code under MIT</span></p>
+</footer>
+
+<div class="begleiter" id="begleiter" hidden>
+  <p class="sprechblase" id="sprechblase" hidden aria-live="polite"></p>
+  <button type="button" id="begleiter-knopf" aria-label="Poke your companion">
+    <canvas id="begleiter-bild" width="48" height="40"></canvas>
+  </button>
+</div>
+
+<script src="engine/pixel.js"></script>
+<script src="engine/props.js"></script>
+<script src="engine/zubehoer.js"></script>
+<script src="engine/animationen.js"></script>
+<script src="engine/namen.js"></script>
+<script src="engine/landschaft.js"></script>
+<script src="engine/welt.js"></script>
+<script src="site.js"></script>
+</body>
+</html>
