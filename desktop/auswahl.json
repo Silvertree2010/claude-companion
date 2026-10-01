@@ -1,0 +1,1923 @@
+{
+  "gespeichert": "2026-09-26T10:57:50.231Z",
+  "bewegungen": [
+    {
+      "id": "b-spazieren",
+      "name": "Spazieren",
+      "gruppe": "Unterwegs"
+    },
+    {
+      "id": "b-wandern-mit-stock",
+      "name": "Wandern mit Stock",
+      "gruppe": "Unterwegs"
+    },
+    {
+      "id": "b-schleichen",
+      "name": "Schleichen",
+      "gruppe": "Unterwegs"
+    },
+    {
+      "id": "b-huepfen",
+      "name": "Hüpfen",
+      "gruppe": "Unterwegs"
+    },
+    {
+      "id": "b-moonwalk",
+      "name": "Moonwalk",
+      "gruppe": "Unterwegs"
+    },
+    {
+      "id": "b-stolpern",
+      "name": "Stolpern",
+      "gruppe": "Unterwegs"
+    },
+    {
+      "id": "b-rennen",
+      "name": "Rennen",
+      "gruppe": "Unterwegs"
+    },
+    {
+      "id": "b-seitwaerts-trippeln",
+      "name": "Seitwärts trippeln",
+      "gruppe": "Unterwegs"
+    },
+    {
+      "id": "b-joggen",
+      "name": "Joggen",
+      "gruppe": "Unterwegs"
+    },
+    {
+      "id": "b-marschieren",
+      "name": "Marschieren",
+      "gruppe": "Unterwegs"
+    },
+    {
+      "id": "b-watscheln",
+      "name": "Watscheln",
+      "gruppe": "Unterwegs"
+    },
+    {
+      "id": "b-kriechen",
+      "name": "Kriechen",
+      "gruppe": "Unterwegs"
+    },
+    {
+      "id": "b-klettern",
+      "name": "Klettern",
+      "gruppe": "Unterwegs"
+    },
+    {
+      "id": "b-abseilen",
+      "name": "Abseilen",
+      "gruppe": "Unterwegs"
+    },
+    {
+      "id": "b-schwimmen",
+      "name": "Schwimmen",
+      "gruppe": "Unterwegs"
+    },
+    {
+      "id": "b-tauchen",
+      "name": "Tauchen",
+      "gruppe": "Unterwegs"
+    },
+    {
+      "id": "b-propellerflug",
+      "name": "Propellerflug",
+      "gruppe": "Unterwegs"
+    },
+    {
+      "id": "b-ballonfahrt",
+      "name": "Ballonfahrt",
+      "gruppe": "Unterwegs"
+    },
+    {
+      "id": "b-schirmflug",
+      "name": "Schirmflug",
+      "gruppe": "Unterwegs"
+    },
+    {
+      "id": "b-skateboard",
+      "name": "Skateboard",
+      "gruppe": "Unterwegs"
+    },
+    {
+      "id": "b-surfen",
+      "name": "Surfen",
+      "gruppe": "Unterwegs"
+    },
+    {
+      "id": "b-teleportieren",
+      "name": "Teleportieren",
+      "gruppe": "Unterwegs"
+    },
+    {
+      "id": "b-reinsprinten",
+      "name": "Reinsprinten",
+      "gruppe": "Unterwegs"
+    },
+    {
+      "id": "b-rumstehen",
+      "name": "Rumstehen",
+      "gruppe": "Alltag"
+    },
+    {
+      "id": "b-umschauen",
+      "name": "Umschauen",
+      "gruppe": "Alltag"
+    },
+    {
+      "id": "b-winken",
+      "name": "Winken",
+      "gruppe": "Alltag"
+    },
+    {
+      "id": "b-beidhaendig-winken",
+      "name": "Beidhändig winken",
+      "gruppe": "Alltag"
+    },
+    {
+      "id": "b-strecken",
+      "name": "Strecken",
+      "gruppe": "Alltag"
+    },
+    {
+      "id": "b-gaehnen",
+      "name": "Gähnen",
+      "gruppe": "Alltag"
+    },
+    {
+      "id": "b-am-kopf-kratzen",
+      "name": "Am Kopf kratzen",
+      "gruppe": "Alltag"
+    },
+    {
+      "id": "b-niesen",
+      "name": "Niesen",
+      "gruppe": "Alltag"
+    },
+    {
+      "id": "b-hinsetzen",
+      "name": "Hinsetzen",
+      "gruppe": "Alltag"
+    },
+    {
+      "id": "b-auf-dem-ruecken-liegen",
+      "name": "Auf dem Rücken liegen",
+      "gruppe": "Alltag"
+    },
+    {
+      "id": "b-haende-in-die-hueften",
+      "name": "Hände in die Hüften",
+      "gruppe": "Alltag"
+    },
+    {
+      "id": "b-warten-und-tippen",
+      "name": "Warten und tippen",
+      "gruppe": "Alltag"
+    },
+    {
+      "id": "b-fegen",
+      "name": "Fegen",
+      "gruppe": "Alltag"
+    },
+    {
+      "id": "b-wischen",
+      "name": "Wischen",
+      "gruppe": "Alltag"
+    },
+    {
+      "id": "b-blumen-giessen",
+      "name": "Blumen giessen",
+      "gruppe": "Alltag"
+    },
+    {
+      "id": "b-paket-tragen",
+      "name": "Paket tragen",
+      "gruppe": "Alltag"
+    },
+    {
+      "id": "b-handy-scrollen",
+      "name": "Handy scrollen",
+      "gruppe": "Alltag"
+    },
+    {
+      "id": "b-selfie",
+      "name": "Selfie",
+      "gruppe": "Alltag"
+    },
+    {
+      "id": "b-zeitung-lesen",
+      "name": "Zeitung lesen",
+      "gruppe": "Alltag"
+    },
+    {
+      "id": "b-einkaufen",
+      "name": "Einkaufen",
+      "gruppe": "Alltag"
+    },
+    {
+      "id": "b-freuen",
+      "name": "Freuen",
+      "gruppe": "Gefühle"
+    },
+    {
+      "id": "b-lachen",
+      "name": "Lachen",
+      "gruppe": "Gefühle"
+    },
+    {
+      "id": "b-kichern",
+      "name": "Kichern",
+      "gruppe": "Gefühle"
+    },
+    {
+      "id": "b-verliebt",
+      "name": "Verliebt",
+      "gruppe": "Gefühle"
+    },
+    {
+      "id": "b-traurig",
+      "name": "Traurig",
+      "gruppe": "Gefühle"
+    },
+    {
+      "id": "b-weinen",
+      "name": "Weinen",
+      "gruppe": "Gefühle"
+    },
+    {
+      "id": "b-wuetend",
+      "name": "Wütend",
+      "gruppe": "Gefühle"
+    },
+    {
+      "id": "b-ausrasten",
+      "name": "Ausrasten",
+      "gruppe": "Gefühle"
+    },
+    {
+      "id": "b-genervt",
+      "name": "Genervt",
+      "gruppe": "Gefühle"
+    },
+    {
+      "id": "b-verlegen",
+      "name": "Verlegen",
+      "gruppe": "Gefühle"
+    },
+    {
+      "id": "b-stolz",
+      "name": "Stolz",
+      "gruppe": "Gefühle"
+    },
+    {
+      "id": "b-erschrecken",
+      "name": "Erschrecken",
+      "gruppe": "Gefühle"
+    },
+    {
+      "id": "b-verwirrt",
+      "name": "Verwirrt",
+      "gruppe": "Gefühle"
+    },
+    {
+      "id": "b-nachdenken",
+      "name": "Nachdenken",
+      "gruppe": "Gefühle"
+    },
+    {
+      "id": "b-idee",
+      "name": "Idee",
+      "gruppe": "Gefühle"
+    },
+    {
+      "id": "b-muede",
+      "name": "Müde",
+      "gruppe": "Gefühle"
+    },
+    {
+      "id": "b-gelangweilt",
+      "name": "Gelangweilt",
+      "gruppe": "Gefühle"
+    },
+    {
+      "id": "b-schmollen",
+      "name": "Schmollen",
+      "gruppe": "Gefühle"
+    },
+    {
+      "id": "b-ueberrascht",
+      "name": "Überrascht",
+      "gruppe": "Gefühle"
+    },
+    {
+      "id": "b-schulterzucken",
+      "name": "Schulterzucken",
+      "gruppe": "Gefühle"
+    },
+    {
+      "id": "b-headbangen",
+      "name": "Headbangen",
+      "gruppe": "Tanz & Musik"
+    },
+    {
+      "id": "b-disco",
+      "name": "Disco",
+      "gruppe": "Tanz & Musik"
+    },
+    {
+      "id": "b-robotertanz",
+      "name": "Robotertanz",
+      "gruppe": "Tanz & Musik"
+    },
+    {
+      "id": "b-wackeltanz",
+      "name": "Wackeltanz",
+      "gruppe": "Tanz & Musik"
+    },
+    {
+      "id": "b-floss",
+      "name": "Floss",
+      "gruppe": "Tanz & Musik"
+    },
+    {
+      "id": "b-dab",
+      "name": "Dab",
+      "gruppe": "Tanz & Musik"
+    },
+    {
+      "id": "b-breakdance",
+      "name": "Breakdance",
+      "gruppe": "Tanz & Musik"
+    },
+    {
+      "id": "b-pirouette",
+      "name": "Pirouette",
+      "gruppe": "Tanz & Musik"
+    },
+    {
+      "id": "b-gitarre-spielen",
+      "name": "Gitarre spielen",
+      "gruppe": "Tanz & Musik"
+    },
+    {
+      "id": "b-auflegen",
+      "name": "Auflegen",
+      "gruppe": "Tanz & Musik"
+    },
+    {
+      "id": "b-trompete",
+      "name": "Trompete",
+      "gruppe": "Tanz & Musik"
+    },
+    {
+      "id": "b-klavier",
+      "name": "Klavier",
+      "gruppe": "Tanz & Musik"
+    },
+    {
+      "id": "b-singen",
+      "name": "Singen",
+      "gruppe": "Tanz & Musik"
+    },
+    {
+      "id": "b-dirigieren",
+      "name": "Dirigieren",
+      "gruppe": "Tanz & Musik"
+    },
+    {
+      "id": "b-musik-hoeren",
+      "name": "Musik hören",
+      "gruppe": "Tanz & Musik"
+    },
+    {
+      "id": "b-gruppentanz",
+      "name": "Gruppentanz",
+      "gruppe": "Tanz & Musik"
+    },
+    {
+      "id": "b-konfettiparty",
+      "name": "Konfettiparty",
+      "gruppe": "Tanz & Musik"
+    },
+    {
+      "id": "b-geige",
+      "name": "Geige",
+      "gruppe": "Tanz & Musik"
+    },
+    {
+      "id": "b-cello",
+      "name": "Cello",
+      "gruppe": "Tanz & Musik"
+    },
+    {
+      "id": "b-kontrabass",
+      "name": "Kontrabass",
+      "gruppe": "Tanz & Musik"
+    },
+    {
+      "id": "b-e-bass",
+      "name": "E-Bass",
+      "gruppe": "Tanz & Musik"
+    },
+    {
+      "id": "b-e-gitarre",
+      "name": "E-Gitarre",
+      "gruppe": "Tanz & Musik"
+    },
+    {
+      "id": "b-ukulele",
+      "name": "Ukulele",
+      "gruppe": "Tanz & Musik"
+    },
+    {
+      "id": "b-banjo",
+      "name": "Banjo",
+      "gruppe": "Tanz & Musik"
+    },
+    {
+      "id": "b-harfe",
+      "name": "Harfe",
+      "gruppe": "Tanz & Musik"
+    },
+    {
+      "id": "b-querfloete",
+      "name": "Querflöte",
+      "gruppe": "Tanz & Musik"
+    },
+    {
+      "id": "b-blockfloete",
+      "name": "Blockflöte",
+      "gruppe": "Tanz & Musik"
+    },
+    {
+      "id": "b-saxofon",
+      "name": "Saxofon",
+      "gruppe": "Tanz & Musik"
+    },
+    {
+      "id": "b-posaune",
+      "name": "Posaune",
+      "gruppe": "Tanz & Musik"
+    },
+    {
+      "id": "b-tuba",
+      "name": "Tuba",
+      "gruppe": "Tanz & Musik"
+    },
+    {
+      "id": "b-waldhorn",
+      "name": "Waldhorn",
+      "gruppe": "Tanz & Musik"
+    },
+    {
+      "id": "b-klarinette",
+      "name": "Klarinette",
+      "gruppe": "Tanz & Musik"
+    },
+    {
+      "id": "b-mundharmonika",
+      "name": "Mundharmonika",
+      "gruppe": "Tanz & Musik"
+    },
+    {
+      "id": "b-akkordeon",
+      "name": "Akkordeon",
+      "gruppe": "Tanz & Musik"
+    },
+    {
+      "id": "b-dudelsack",
+      "name": "Dudelsack",
+      "gruppe": "Tanz & Musik"
+    },
+    {
+      "id": "b-xylofon",
+      "name": "Xylofon",
+      "gruppe": "Tanz & Musik"
+    },
+    {
+      "id": "b-triangel",
+      "name": "Triangel",
+      "gruppe": "Tanz & Musik"
+    },
+    {
+      "id": "b-tamburin",
+      "name": "Tamburin",
+      "gruppe": "Tanz & Musik"
+    },
+    {
+      "id": "b-maracas",
+      "name": "Maracas",
+      "gruppe": "Tanz & Musik"
+    },
+    {
+      "id": "b-bongos",
+      "name": "Bongos",
+      "gruppe": "Tanz & Musik"
+    },
+    {
+      "id": "b-pauke",
+      "name": "Pauke",
+      "gruppe": "Tanz & Musik"
+    },
+    {
+      "id": "b-becken",
+      "name": "Becken",
+      "gruppe": "Tanz & Musik"
+    },
+    {
+      "id": "b-keytar",
+      "name": "Keytar",
+      "gruppe": "Tanz & Musik"
+    },
+    {
+      "id": "b-synthesizer",
+      "name": "Synthesizer",
+      "gruppe": "Tanz & Musik"
+    },
+    {
+      "id": "b-theremin",
+      "name": "Theremin",
+      "gruppe": "Tanz & Musik"
+    },
+    {
+      "id": "b-gong",
+      "name": "Gong",
+      "gruppe": "Tanz & Musik"
+    },
+    {
+      "id": "b-alphorn",
+      "name": "Alphorn",
+      "gruppe": "Tanz & Musik"
+    },
+    {
+      "id": "b-drumset",
+      "name": "Drumset",
+      "gruppe": "Tanz & Musik"
+    },
+    {
+      "id": "b-hanteln-stemmen",
+      "name": "Hanteln stemmen",
+      "gruppe": "Sport & Akrobatik"
+    },
+    {
+      "id": "b-kniebeugen",
+      "name": "Kniebeugen",
+      "gruppe": "Sport & Akrobatik"
+    },
+    {
+      "id": "b-hampelmann",
+      "name": "Hampelmann",
+      "gruppe": "Sport & Akrobatik"
+    },
+    {
+      "id": "b-salto",
+      "name": "Salto",
+      "gruppe": "Sport & Akrobatik"
+    },
+    {
+      "id": "b-rueckwaertssalto",
+      "name": "Rückwärtssalto",
+      "gruppe": "Sport & Akrobatik"
+    },
+    {
+      "id": "b-rad-schlagen",
+      "name": "Rad schlagen",
+      "gruppe": "Sport & Akrobatik"
+    },
+    {
+      "id": "b-handstand",
+      "name": "Handstand",
+      "gruppe": "Sport & Akrobatik"
+    },
+    {
+      "id": "b-seilspringen",
+      "name": "Seilspringen",
+      "gruppe": "Sport & Akrobatik"
+    },
+    {
+      "id": "b-jonglieren",
+      "name": "Jonglieren",
+      "gruppe": "Sport & Akrobatik"
+    },
+    {
+      "id": "b-dribbeln",
+      "name": "Dribbeln",
+      "gruppe": "Sport & Akrobatik"
+    },
+    {
+      "id": "b-fussball-kicken",
+      "name": "Fussball kicken",
+      "gruppe": "Sport & Akrobatik"
+    },
+    {
+      "id": "b-basketball-werfen",
+      "name": "Basketball werfen",
+      "gruppe": "Sport & Akrobatik"
+    },
+    {
+      "id": "b-boxen",
+      "name": "Boxen",
+      "gruppe": "Sport & Akrobatik"
+    },
+    {
+      "id": "b-karate",
+      "name": "Karate",
+      "gruppe": "Sport & Akrobatik"
+    },
+    {
+      "id": "b-yoga-baum",
+      "name": "Yoga-Baum",
+      "gruppe": "Sport & Akrobatik"
+    },
+    {
+      "id": "b-meditieren",
+      "name": "Meditieren",
+      "gruppe": "Sport & Akrobatik"
+    },
+    {
+      "id": "b-gewichtheben",
+      "name": "Gewichtheben",
+      "gruppe": "Sport & Akrobatik"
+    },
+    {
+      "id": "b-seitlich-dehnen",
+      "name": "Seitlich dehnen",
+      "gruppe": "Sport & Akrobatik"
+    },
+    {
+      "id": "b-tippen",
+      "name": "Tippen",
+      "gruppe": "Arbeit & Nerd"
+    },
+    {
+      "id": "b-hacken",
+      "name": "Hacken",
+      "gruppe": "Arbeit & Nerd"
+    },
+    {
+      "id": "b-auf-den-build-warten",
+      "name": "Auf den Build warten",
+      "gruppe": "Arbeit & Nerd"
+    },
+    {
+      "id": "b-bug-gefunden",
+      "name": "Bug gefunden",
+      "gruppe": "Arbeit & Nerd"
+    },
+    {
+      "id": "b-code-review",
+      "name": "Code-Review",
+      "gruppe": "Arbeit & Nerd"
+    },
+    {
+      "id": "b-deployen",
+      "name": "Deployen",
+      "gruppe": "Arbeit & Nerd"
+    },
+    {
+      "id": "b-alles-brennt",
+      "name": "Alles brennt",
+      "gruppe": "Arbeit & Nerd"
+    },
+    {
+      "id": "b-kaffeepause",
+      "name": "Kaffeepause",
+      "gruppe": "Arbeit & Nerd"
+    },
+    {
+      "id": "b-im-meeting",
+      "name": "Im Meeting",
+      "gruppe": "Arbeit & Nerd"
+    },
+    {
+      "id": "b-praesentieren",
+      "name": "Präsentieren",
+      "gruppe": "Arbeit & Nerd"
+    },
+    {
+      "id": "b-notizen-machen",
+      "name": "Notizen machen",
+      "gruppe": "Arbeit & Nerd"
+    },
+    {
+      "id": "b-dateien-jonglieren",
+      "name": "Dateien jonglieren",
+      "gruppe": "Arbeit & Nerd"
+    },
+    {
+      "id": "b-server-streicheln",
+      "name": "Server streicheln",
+      "gruppe": "Arbeit & Nerd"
+    },
+    {
+      "id": "b-kabelsalat",
+      "name": "Kabelsalat",
+      "gruppe": "Arbeit & Nerd"
+    },
+    {
+      "id": "b-haemmern",
+      "name": "Hämmern",
+      "gruppe": "Arbeit & Nerd"
+    },
+    {
+      "id": "b-schrauben",
+      "name": "Schrauben",
+      "gruppe": "Arbeit & Nerd"
+    },
+    {
+      "id": "b-malen",
+      "name": "Malen",
+      "gruppe": "Arbeit & Nerd"
+    },
+    {
+      "id": "b-forschen",
+      "name": "Forschen",
+      "gruppe": "Arbeit & Nerd"
+    },
+    {
+      "id": "b-chemie",
+      "name": "Chemie",
+      "gruppe": "Arbeit & Nerd"
+    },
+    {
+      "id": "b-kaffee-schluerfen",
+      "name": "Kaffee schlürfen",
+      "gruppe": "Essen & Trinken"
+    },
+    {
+      "id": "b-tee-trinken",
+      "name": "Tee trinken",
+      "gruppe": "Essen & Trinken"
+    },
+    {
+      "id": "b-pizza-essen",
+      "name": "Pizza essen",
+      "gruppe": "Essen & Trinken"
+    },
+    {
+      "id": "b-burger-mampfen",
+      "name": "Burger mampfen",
+      "gruppe": "Essen & Trinken"
+    },
+    {
+      "id": "b-eis-schlecken",
+      "name": "Eis schlecken",
+      "gruppe": "Essen & Trinken"
+    },
+    {
+      "id": "b-donut",
+      "name": "Donut",
+      "gruppe": "Essen & Trinken"
+    },
+    {
+      "id": "b-nudeln-schluerfen",
+      "name": "Nudeln schlürfen",
+      "gruppe": "Essen & Trinken"
+    },
+    {
+      "id": "b-apfel-knabbern",
+      "name": "Apfel knabbern",
+      "gruppe": "Essen & Trinken"
+    },
+    {
+      "id": "b-popcorn",
+      "name": "Popcorn",
+      "gruppe": "Essen & Trinken"
+    },
+    {
+      "id": "b-kerzen-auspusten",
+      "name": "Kerzen auspusten",
+      "gruppe": "Essen & Trinken"
+    },
+    {
+      "id": "b-grillen",
+      "name": "Grillen",
+      "gruppe": "Essen & Trinken"
+    },
+    {
+      "id": "b-kochen",
+      "name": "Kochen",
+      "gruppe": "Essen & Trinken"
+    },
+    {
+      "id": "b-vollgefuttert",
+      "name": "Vollgefuttert",
+      "gruppe": "Essen & Trinken"
+    },
+    {
+      "id": "b-anstossen",
+      "name": "Anstossen",
+      "gruppe": "Essen & Trinken"
+    },
+    {
+      "id": "b-zocken",
+      "name": "Zocken",
+      "gruppe": "Gaming"
+    },
+    {
+      "id": "b-gewonnen",
+      "name": "Gewonnen",
+      "gruppe": "Gaming"
+    },
+    {
+      "id": "b-rage-quit",
+      "name": "Rage Quit",
+      "gruppe": "Gaming"
+    },
+    {
+      "id": "b-rhythmusspiel",
+      "name": "Rhythmusspiel",
+      "gruppe": "Gaming"
+    },
+    {
+      "id": "b-vr-welt",
+      "name": "VR-Welt",
+      "gruppe": "Gaming"
+    },
+    {
+      "id": "b-speedrun",
+      "name": "Speedrun",
+      "gruppe": "Gaming"
+    },
+    {
+      "id": "b-loot-gefunden",
+      "name": "Loot gefunden",
+      "gruppe": "Gaming"
+    },
+    {
+      "id": "b-level-up",
+      "name": "Level Up",
+      "gruppe": "Gaming"
+    },
+    {
+      "id": "b-game-over",
+      "name": "Game Over",
+      "gruppe": "Gaming"
+    },
+    {
+      "id": "b-respawn",
+      "name": "Respawn",
+      "gruppe": "Gaming"
+    },
+    {
+      "id": "b-schwertkampf",
+      "name": "Schwertkampf",
+      "gruppe": "Gaming"
+    },
+    {
+      "id": "b-anfeuern",
+      "name": "Anfeuern",
+      "gruppe": "Gaming"
+    },
+    {
+      "id": "b-einschlafen",
+      "name": "Einschlafen",
+      "gruppe": "Schlaf & Ruhe"
+    },
+    {
+      "id": "b-schlafen",
+      "name": "Schlafen",
+      "gruppe": "Schlaf & Ruhe"
+    },
+    {
+      "id": "b-schnarchen",
+      "name": "Schnarchen",
+      "gruppe": "Schlaf & Ruhe"
+    },
+    {
+      "id": "b-traeumen",
+      "name": "Träumen",
+      "gruppe": "Schlaf & Ruhe"
+    },
+    {
+      "id": "b-nickerchen-im-sitzen",
+      "name": "Nickerchen im Sitzen",
+      "gruppe": "Schlaf & Ruhe"
+    },
+    {
+      "id": "b-schlafwandeln",
+      "name": "Schlafwandeln",
+      "gruppe": "Schlaf & Ruhe"
+    },
+    {
+      "id": "b-aufwachen",
+      "name": "Aufwachen",
+      "gruppe": "Schlaf & Ruhe"
+    },
+    {
+      "id": "b-im-bett",
+      "name": "Im Bett",
+      "gruppe": "Schlaf & Ruhe"
+    },
+    {
+      "id": "b-haengematte",
+      "name": "Hängematte",
+      "gruppe": "Schlaf & Ruhe"
+    },
+    {
+      "id": "b-sonnenbaden",
+      "name": "Sonnenbaden",
+      "gruppe": "Schlaf & Ruhe"
+    },
+    {
+      "id": "b-sterne-gucken",
+      "name": "Sterne gucken",
+      "gruppe": "Schlaf & Ruhe"
+    },
+    {
+      "id": "b-kuscheltier-druecken",
+      "name": "Kuscheltier drücken",
+      "gruppe": "Schlaf & Ruhe"
+    },
+    {
+      "id": "b-im-regen-stehen",
+      "name": "Im Regen stehen",
+      "gruppe": "Wetter & Natur"
+    },
+    {
+      "id": "b-regenschirm",
+      "name": "Regenschirm",
+      "gruppe": "Wetter & Natur"
+    },
+    {
+      "id": "b-schneeflocken-fangen",
+      "name": "Schneeflocken fangen",
+      "gruppe": "Wetter & Natur"
+    },
+    {
+      "id": "b-schneeballschlacht",
+      "name": "Schneeballschlacht",
+      "gruppe": "Wetter & Natur"
+    },
+    {
+      "id": "b-frieren",
+      "name": "Frieren",
+      "gruppe": "Wetter & Natur"
+    },
+    {
+      "id": "b-hitze",
+      "name": "Hitze",
+      "gruppe": "Wetter & Natur"
+    },
+    {
+      "id": "b-gewitter",
+      "name": "Gewitter",
+      "gruppe": "Wetter & Natur"
+    },
+    {
+      "id": "b-gegen-den-wind",
+      "name": "Gegen den Wind",
+      "gruppe": "Wetter & Natur"
+    },
+    {
+      "id": "b-laub-rechen",
+      "name": "Laub rechen",
+      "gruppe": "Wetter & Natur"
+    },
+    {
+      "id": "b-schmetterling-jagen",
+      "name": "Schmetterling jagen",
+      "gruppe": "Wetter & Natur"
+    },
+    {
+      "id": "b-an-blume-riechen",
+      "name": "An Blume riechen",
+      "gruppe": "Wetter & Natur"
+    },
+    {
+      "id": "b-vogel-auf-dem-kopf",
+      "name": "Vogel auf dem Kopf",
+      "gruppe": "Wetter & Natur"
+    },
+    {
+      "id": "b-katze-streicheln",
+      "name": "Katze streicheln",
+      "gruppe": "Wetter & Natur"
+    },
+    {
+      "id": "b-zaubern",
+      "name": "Zaubern",
+      "gruppe": "Magie & Glitch"
+    },
+    {
+      "id": "b-schweben",
+      "name": "Schweben",
+      "gruppe": "Magie & Glitch"
+    },
+    {
+      "id": "b-unsichtbar-werden",
+      "name": "Unsichtbar werden",
+      "gruppe": "Magie & Glitch"
+    },
+    {
+      "id": "b-glitch",
+      "name": "Glitch",
+      "gruppe": "Magie & Glitch"
+    },
+    {
+      "id": "b-pixel-zerfallen",
+      "name": "Pixel zerfallen",
+      "gruppe": "Magie & Glitch"
+    },
+    {
+      "id": "b-wachsen-und-schrumpfen",
+      "name": "Wachsen und Schrumpfen",
+      "gruppe": "Magie & Glitch"
+    },
+    {
+      "id": "b-klonen",
+      "name": "Klonen",
+      "gruppe": "Magie & Glitch"
+    },
+    {
+      "id": "b-kristallkugel",
+      "name": "Kristallkugel",
+      "gruppe": "Magie & Glitch"
+    },
+    {
+      "id": "b-feuerball",
+      "name": "Feuerball",
+      "gruppe": "Magie & Glitch"
+    },
+    {
+      "id": "b-durchs-portal",
+      "name": "Durchs Portal",
+      "gruppe": "Magie & Glitch"
+    },
+    {
+      "id": "b-matrix",
+      "name": "Matrix",
+      "gruppe": "Magie & Glitch"
+    },
+    {
+      "id": "b-regenbogen-aura",
+      "name": "Regenbogen-Aura",
+      "gruppe": "Magie & Glitch"
+    },
+    {
+      "id": "b-zuhoeren",
+      "name": "Zuhören",
+      "gruppe": "Im Gespräch"
+    },
+    {
+      "id": "b-antwort-ueberlegen",
+      "name": "Antwort überlegen",
+      "gruppe": "Im Gespräch"
+    },
+    {
+      "id": "b-reden",
+      "name": "Reden",
+      "gruppe": "Im Gespräch"
+    },
+    {
+      "id": "b-mit-haenden-erklaeren",
+      "name": "Mit Händen erklären",
+      "gruppe": "Im Gespräch"
+    },
+    {
+      "id": "b-nicken",
+      "name": "Nicken",
+      "gruppe": "Im Gespräch"
+    },
+    {
+      "id": "b-kopfschuetteln",
+      "name": "Kopfschütteln",
+      "gruppe": "Im Gespräch"
+    },
+    {
+      "id": "b-daumen-hoch",
+      "name": "Daumen hoch",
+      "gruppe": "Im Gespräch"
+    },
+    {
+      "id": "b-fluestern",
+      "name": "Flüstern",
+      "gruppe": "Im Gespräch"
+    },
+    {
+      "id": "b-laden",
+      "name": "Laden",
+      "gruppe": "Im Gespräch"
+    },
+    {
+      "id": "b-fehler-404",
+      "name": "Fehler 404",
+      "gruppe": "Im Gespräch"
+    }
+  ],
+  "aussehen": [
+    {
+      "id": "a-klassisch-claude",
+      "name": "Klassisch Claude",
+      "gruppe": "Farben & Muster",
+      "platz": "skin"
+    },
+    {
+      "id": "a-pastellrosa",
+      "name": "Pastellrosa",
+      "gruppe": "Farben & Muster",
+      "platz": "skin"
+    },
+    {
+      "id": "a-minze",
+      "name": "Minze",
+      "gruppe": "Farben & Muster",
+      "platz": "skin"
+    },
+    {
+      "id": "a-himmelblau",
+      "name": "Himmelblau",
+      "gruppe": "Farben & Muster",
+      "platz": "skin"
+    },
+    {
+      "id": "a-lavendel",
+      "name": "Lavendel",
+      "gruppe": "Farben & Muster",
+      "platz": "skin"
+    },
+    {
+      "id": "a-zitrone",
+      "name": "Zitrone",
+      "gruppe": "Farben & Muster",
+      "platz": "skin"
+    },
+    {
+      "id": "a-tomate",
+      "name": "Tomate",
+      "gruppe": "Farben & Muster",
+      "platz": "skin"
+    },
+    {
+      "id": "a-schiefer",
+      "name": "Schiefer",
+      "gruppe": "Farben & Muster",
+      "platz": "skin"
+    },
+    {
+      "id": "a-schneeweiss",
+      "name": "Schneeweiss",
+      "gruppe": "Farben & Muster",
+      "platz": "skin"
+    },
+    {
+      "id": "a-mitternacht",
+      "name": "Mitternacht",
+      "gruppe": "Farben & Muster",
+      "platz": "skin"
+    },
+    {
+      "id": "a-oled",
+      "name": "OLED",
+      "gruppe": "Farben & Muster",
+      "platz": "skin"
+    },
+    {
+      "id": "a-gold",
+      "name": "Gold",
+      "gruppe": "Farben & Muster",
+      "platz": "skin"
+    },
+    {
+      "id": "a-silber",
+      "name": "Silber",
+      "gruppe": "Farben & Muster",
+      "platz": "skin"
+    },
+    {
+      "id": "a-bronze",
+      "name": "Bronze",
+      "gruppe": "Farben & Muster",
+      "platz": "skin"
+    },
+    {
+      "id": "a-smaragd",
+      "name": "Smaragd",
+      "gruppe": "Farben & Muster",
+      "platz": "skin"
+    },
+    {
+      "id": "a-rubin",
+      "name": "Rubin",
+      "gruppe": "Farben & Muster",
+      "platz": "skin"
+    },
+    {
+      "id": "a-saphir",
+      "name": "Saphir",
+      "gruppe": "Farben & Muster",
+      "platz": "skin"
+    },
+    {
+      "id": "a-amethyst",
+      "name": "Amethyst",
+      "gruppe": "Farben & Muster",
+      "platz": "skin"
+    },
+    {
+      "id": "a-neonpink",
+      "name": "Neonpink",
+      "gruppe": "Farben & Muster",
+      "platz": "skin"
+    },
+    {
+      "id": "a-neongruen",
+      "name": "Neongrün",
+      "gruppe": "Farben & Muster",
+      "platz": "skin"
+    },
+    {
+      "id": "a-schokolade",
+      "name": "Schokolade",
+      "gruppe": "Farben & Muster",
+      "platz": "skin"
+    },
+    {
+      "id": "a-erdbeere",
+      "name": "Erdbeere",
+      "gruppe": "Farben & Muster",
+      "platz": "skin"
+    },
+    {
+      "id": "a-karamell",
+      "name": "Karamell",
+      "gruppe": "Farben & Muster",
+      "platz": "skin"
+    },
+    {
+      "id": "a-wassermelone",
+      "name": "Wassermelone",
+      "gruppe": "Farben & Muster",
+      "platz": "skin"
+    },
+    {
+      "id": "a-tiger",
+      "name": "Tiger",
+      "gruppe": "Farben & Muster",
+      "platz": "skin"
+    },
+    {
+      "id": "a-kuh",
+      "name": "Kuh",
+      "gruppe": "Farben & Muster",
+      "platz": "skin"
+    },
+    {
+      "id": "a-leopard",
+      "name": "Leopard",
+      "gruppe": "Farben & Muster",
+      "platz": "skin"
+    },
+    {
+      "id": "a-tarnfarbe",
+      "name": "Tarnfarbe",
+      "gruppe": "Farben & Muster",
+      "platz": "skin"
+    },
+    {
+      "id": "a-regenbogen",
+      "name": "Regenbogen",
+      "gruppe": "Farben & Muster",
+      "platz": "skin"
+    },
+    {
+      "id": "a-holografisch",
+      "name": "Holografisch",
+      "gruppe": "Farben & Muster",
+      "platz": "skin"
+    },
+    {
+      "id": "a-galaxie",
+      "name": "Galaxie",
+      "gruppe": "Farben & Muster",
+      "platz": "skin"
+    },
+    {
+      "id": "a-lava",
+      "name": "Lava",
+      "gruppe": "Farben & Muster",
+      "platz": "skin"
+    },
+    {
+      "id": "a-eis",
+      "name": "Eis",
+      "gruppe": "Farben & Muster",
+      "platz": "skin"
+    },
+    {
+      "id": "a-geist",
+      "name": "Geist",
+      "gruppe": "Farben & Muster",
+      "platz": "skin"
+    },
+    {
+      "id": "a-drahtgitter",
+      "name": "Drahtgitter",
+      "gruppe": "Farben & Muster",
+      "platz": "skin"
+    },
+    {
+      "id": "a-gameboy",
+      "name": "Gameboy",
+      "gruppe": "Farben & Muster",
+      "platz": "skin"
+    },
+    {
+      "id": "a-einheit-01",
+      "name": "Einheit 01",
+      "gruppe": "Farben & Muster",
+      "platz": "skin"
+    },
+    {
+      "id": "a-einheit-02",
+      "name": "Einheit 02",
+      "gruppe": "Farben & Muster",
+      "platz": "skin"
+    },
+    {
+      "id": "a-einheit-00",
+      "name": "Einheit 00",
+      "gruppe": "Farben & Muster",
+      "platz": "skin"
+    },
+    {
+      "id": "a-schweizerkreuz",
+      "name": "Schweizerkreuz",
+      "gruppe": "Farben & Muster",
+      "platz": "skin"
+    },
+    {
+      "id": "a-holz",
+      "name": "Holz",
+      "gruppe": "Farben & Muster",
+      "platz": "skin"
+    },
+    {
+      "id": "a-marmor",
+      "name": "Marmor",
+      "gruppe": "Farben & Muster",
+      "platz": "skin"
+    },
+    {
+      "id": "a-terminal",
+      "name": "Terminal",
+      "gruppe": "Farben & Muster",
+      "platz": "skin"
+    },
+    {
+      "id": "a-sonnenuntergang",
+      "name": "Sonnenuntergang",
+      "gruppe": "Farben & Muster",
+      "platz": "skin"
+    },
+    {
+      "id": "a-wanderhut",
+      "name": "Wanderhut",
+      "gruppe": "Kopf",
+      "platz": "kopf"
+    },
+    {
+      "id": "a-zylinder",
+      "name": "Zylinder",
+      "gruppe": "Kopf",
+      "platz": "kopf"
+    },
+    {
+      "id": "a-krone",
+      "name": "Krone",
+      "gruppe": "Kopf",
+      "platz": "kopf"
+    },
+    {
+      "id": "a-zauberhut",
+      "name": "Zauberhut",
+      "gruppe": "Kopf",
+      "platz": "kopf"
+    },
+    {
+      "id": "a-cowboyhut",
+      "name": "Cowboyhut",
+      "gruppe": "Kopf",
+      "platz": "kopf"
+    },
+    {
+      "id": "a-piratenhut",
+      "name": "Piratenhut",
+      "gruppe": "Kopf",
+      "platz": "kopf"
+    },
+    {
+      "id": "a-kochmuetze",
+      "name": "Kochmütze",
+      "gruppe": "Kopf",
+      "platz": "kopf"
+    },
+    {
+      "id": "a-partyhut",
+      "name": "Partyhut",
+      "gruppe": "Kopf",
+      "platz": "kopf"
+    },
+    {
+      "id": "a-propellermuetze",
+      "name": "Propellermütze",
+      "gruppe": "Kopf",
+      "platz": "kopf"
+    },
+    {
+      "id": "a-muetze-rot",
+      "name": "Mütze rot",
+      "gruppe": "Kopf",
+      "platz": "kopf"
+    },
+    {
+      "id": "a-muetze-grau",
+      "name": "Mütze grau",
+      "gruppe": "Kopf",
+      "platz": "kopf"
+    },
+    {
+      "id": "a-muetze-senfgelb",
+      "name": "Mütze senfgelb",
+      "gruppe": "Kopf",
+      "platz": "kopf"
+    },
+    {
+      "id": "a-muetze-tannengruen",
+      "name": "Mütze tannengrün",
+      "gruppe": "Kopf",
+      "platz": "kopf"
+    },
+    {
+      "id": "a-cap-rot",
+      "name": "Cap rot",
+      "gruppe": "Kopf",
+      "platz": "kopf"
+    },
+    {
+      "id": "a-cap-blau",
+      "name": "Cap blau",
+      "gruppe": "Kopf",
+      "platz": "kopf"
+    },
+    {
+      "id": "a-cap-schwarz",
+      "name": "Cap schwarz",
+      "gruppe": "Kopf",
+      "platz": "kopf"
+    },
+    {
+      "id": "a-cap-rueckwaerts",
+      "name": "Cap rückwärts",
+      "gruppe": "Kopf",
+      "platz": "kopf"
+    },
+    {
+      "id": "a-heiligenschein",
+      "name": "Heiligenschein",
+      "gruppe": "Kopf",
+      "platz": "kopf"
+    },
+    {
+      "id": "a-teufelshoerner",
+      "name": "Teufelshörner",
+      "gruppe": "Kopf",
+      "platz": "kopf"
+    },
+    {
+      "id": "a-hasenohren",
+      "name": "Hasenohren",
+      "gruppe": "Kopf",
+      "platz": "kopf"
+    },
+    {
+      "id": "a-katzenohren",
+      "name": "Katzenohren",
+      "gruppe": "Kopf",
+      "platz": "kopf"
+    },
+    {
+      "id": "a-fuchsohren",
+      "name": "Fuchsohren",
+      "gruppe": "Kopf",
+      "platz": "kopf"
+    },
+    {
+      "id": "a-antennen",
+      "name": "Antennen",
+      "gruppe": "Kopf",
+      "platz": "kopf"
+    },
+    {
+      "id": "a-blume-im-haar",
+      "name": "Blume im Haar",
+      "gruppe": "Kopf",
+      "platz": "kopf"
+    },
+    {
+      "id": "a-schleife",
+      "name": "Schleife",
+      "gruppe": "Kopf",
+      "platz": "kopf"
+    },
+    {
+      "id": "a-kopfhoerer",
+      "name": "Kopfhörer",
+      "gruppe": "Kopf",
+      "platz": "kopf"
+    },
+    {
+      "id": "a-kopfhoerer-weiss",
+      "name": "Kopfhörer weiss",
+      "gruppe": "Kopf",
+      "platz": "kopf"
+    },
+    {
+      "id": "a-stirnband-rot",
+      "name": "Stirnband rot",
+      "gruppe": "Kopf",
+      "platz": "kopf"
+    },
+    {
+      "id": "a-stirnband-frottee",
+      "name": "Stirnband Frottee",
+      "gruppe": "Kopf",
+      "platz": "kopf"
+    },
+    {
+      "id": "a-ninja-band",
+      "name": "Ninja-Band",
+      "gruppe": "Kopf",
+      "platz": "kopf"
+    },
+    {
+      "id": "a-bauhelm",
+      "name": "Bauhelm",
+      "gruppe": "Kopf",
+      "platz": "kopf"
+    },
+    {
+      "id": "a-feuerwehrhelm",
+      "name": "Feuerwehrhelm",
+      "gruppe": "Kopf",
+      "platz": "kopf"
+    },
+    {
+      "id": "a-wikingerhelm",
+      "name": "Wikingerhelm",
+      "gruppe": "Kopf",
+      "platz": "kopf"
+    },
+    {
+      "id": "a-ritterhelm",
+      "name": "Ritterhelm",
+      "gruppe": "Kopf",
+      "platz": "kopf"
+    },
+    {
+      "id": "a-raumhelm",
+      "name": "Raumhelm",
+      "gruppe": "Kopf",
+      "platz": "kopf"
+    },
+    {
+      "id": "a-detektivmuetze",
+      "name": "Detektivmütze",
+      "gruppe": "Kopf",
+      "platz": "kopf"
+    },
+    {
+      "id": "a-baskenmuetze",
+      "name": "Baskenmütze",
+      "gruppe": "Kopf",
+      "platz": "kopf"
+    },
+    {
+      "id": "a-sombrero",
+      "name": "Sombrero",
+      "gruppe": "Kopf",
+      "platz": "kopf"
+    },
+    {
+      "id": "a-doktorhut",
+      "name": "Doktorhut",
+      "gruppe": "Kopf",
+      "platz": "kopf"
+    },
+    {
+      "id": "a-einhorn-horn",
+      "name": "Einhorn-Horn",
+      "gruppe": "Kopf",
+      "platz": "kopf"
+    },
+    {
+      "id": "a-pilzhut",
+      "name": "Pilzhut",
+      "gruppe": "Kopf",
+      "platz": "kopf"
+    },
+    {
+      "id": "a-fischerhut",
+      "name": "Fischerhut",
+      "gruppe": "Kopf",
+      "platz": "kopf"
+    },
+    {
+      "id": "a-weihnachtsmuetze",
+      "name": "Weihnachtsmütze",
+      "gruppe": "Kopf",
+      "platz": "kopf"
+    },
+    {
+      "id": "a-blumenkranz",
+      "name": "Blumenkranz",
+      "gruppe": "Kopf",
+      "platz": "kopf"
+    },
+    {
+      "id": "a-lorbeerkranz",
+      "name": "Lorbeerkranz",
+      "gruppe": "Kopf",
+      "platz": "kopf"
+    },
+    {
+      "id": "a-hexenhut",
+      "name": "Hexenhut",
+      "gruppe": "Kopf",
+      "platz": "kopf"
+    },
+    {
+      "id": "a-kopfverband",
+      "name": "Kopfverband",
+      "gruppe": "Kopf",
+      "platz": "kopf"
+    },
+    {
+      "id": "a-wuschelhaare-braun",
+      "name": "Wuschelhaare braun",
+      "gruppe": "Kopf",
+      "platz": "kopf"
+    },
+    {
+      "id": "a-irokese-gruen",
+      "name": "Irokese grün",
+      "gruppe": "Kopf",
+      "platz": "kopf"
+    },
+    {
+      "id": "a-irokese-pink",
+      "name": "Irokese pink",
+      "gruppe": "Kopf",
+      "platz": "kopf"
+    },
+    {
+      "id": "a-wuschelhaare-blond",
+      "name": "Wuschelhaare blond",
+      "gruppe": "Kopf",
+      "platz": "kopf"
+    },
+    {
+      "id": "a-matrosenmuetze",
+      "name": "Matrosenmütze",
+      "gruppe": "Kopf",
+      "platz": "kopf"
+    },
+    {
+      "id": "a-tell-apfel",
+      "name": "Tell-Apfel",
+      "gruppe": "Kopf",
+      "platz": "kopf"
+    },
+    {
+      "id": "a-sennenkaeppi",
+      "name": "Sennenkäppi",
+      "gruppe": "Kopf",
+      "platz": "kopf"
+    },
+    {
+      "id": "a-drachenhoerner",
+      "name": "Drachenhörner",
+      "gruppe": "Kopf",
+      "platz": "kopf"
+    },
+    {
+      "id": "a-pilotenbrille",
+      "name": "Pilotenbrille",
+      "gruppe": "Augen",
+      "platz": "augen"
+    },
+    {
+      "id": "a-sonnenbrille",
+      "name": "Sonnenbrille",
+      "gruppe": "Augen",
+      "platz": "augen"
+    },
+    {
+      "id": "a-nerdbrille",
+      "name": "Nerdbrille",
+      "gruppe": "Augen",
+      "platz": "augen"
+    },
+    {
+      "id": "a-runde-brille",
+      "name": "Runde Brille",
+      "gruppe": "Augen",
+      "platz": "augen"
+    },
+    {
+      "id": "a-herzbrille",
+      "name": "Herzbrille",
+      "gruppe": "Augen",
+      "platz": "augen"
+    },
+    {
+      "id": "a-sternbrille",
+      "name": "Sternbrille",
+      "gruppe": "Augen",
+      "platz": "augen"
+    },
+    {
+      "id": "a-3d-brille",
+      "name": "3D-Brille",
+      "gruppe": "Augen",
+      "platz": "augen"
+    },
+    {
+      "id": "a-monokel",
+      "name": "Monokel",
+      "gruppe": "Augen",
+      "platz": "augen"
+    },
+    {
+      "id": "a-augenklappe",
+      "name": "Augenklappe",
+      "gruppe": "Augen",
+      "platz": "augen"
+    },
+    {
+      "id": "a-skibrille",
+      "name": "Skibrille",
+      "gruppe": "Augen",
+      "platz": "augen"
+    },
+    {
+      "id": "a-taucherbrille",
+      "name": "Taucherbrille",
+      "gruppe": "Augen",
+      "platz": "augen"
+    },
+    {
+      "id": "a-vr-brille",
+      "name": "VR-Brille",
+      "gruppe": "Augen",
+      "platz": "augen"
+    },
+    {
+      "id": "a-pixel-brille",
+      "name": "Pixel-Brille",
+      "gruppe": "Augen",
+      "platz": "augen"
+    },
+    {
+      "id": "a-steampunk-brille",
+      "name": "Steampunk-Brille",
+      "gruppe": "Augen",
+      "platz": "augen"
+    },
+    {
+      "id": "a-cyber-visier",
+      "name": "Cyber-Visier",
+      "gruppe": "Augen",
+      "platz": "augen"
+    },
+    {
+      "id": "a-nachtsicht",
+      "name": "Nachtsicht",
+      "gruppe": "Augen",
+      "platz": "augen"
+    },
+    {
+      "id": "a-clownnase",
+      "name": "Clownnase",
+      "gruppe": "Gesicht",
+      "platz": "gesicht"
+    },
+    {
+      "id": "a-wangenroete",
+      "name": "Wangenröte",
+      "gruppe": "Gesicht",
+      "platz": "gesicht"
+    },
+    {
+      "id": "a-pflaster",
+      "name": "Pflaster",
+      "gruppe": "Gesicht",
+      "platz": "gesicht"
+    },
+    {
+      "id": "a-vampirzaehne",
+      "name": "Vampirzähne",
+      "gruppe": "Gesicht",
+      "platz": "gesicht"
+    },
+    {
+      "id": "a-zunge-raus",
+      "name": "Zunge raus",
+      "gruppe": "Gesicht",
+      "platz": "gesicht"
+    },
+    {
+      "id": "a-fliege-schwarz",
+      "name": "Fliege schwarz",
+      "gruppe": "Hals",
+      "platz": "hals"
+    },
+    {
+      "id": "a-fliege-rot",
+      "name": "Fliege rot",
+      "gruppe": "Hals",
+      "platz": "hals"
+    },
+    {
+      "id": "a-fliege-gepunktet",
+      "name": "Fliege gepunktet",
+      "gruppe": "Hals",
+      "platz": "hals"
+    },
+    {
+      "id": "a-krawatte-rot",
+      "name": "Krawatte rot",
+      "gruppe": "Hals",
+      "platz": "hals"
+    },
+    {
+      "id": "a-krawatte-blau",
+      "name": "Krawatte blau",
+      "gruppe": "Hals",
+      "platz": "hals"
+    },
+    {
+      "id": "a-krawatte-gestreift",
+      "name": "Krawatte gestreift",
+      "gruppe": "Hals",
+      "platz": "hals"
+    },
+    {
+      "id": "a-schal-gruen",
+      "name": "Schal grün",
+      "gruppe": "Hals",
+      "platz": "hals"
+    },
+    {
+      "id": "a-schal-blau",
+      "name": "Schal blau",
+      "gruppe": "Hals",
+      "platz": "hals"
+    },
+    {
+      "id": "a-goldkette",
+      "name": "Goldkette",
+      "gruppe": "Hals",
+      "platz": "hals"
+    },
+    {
+      "id": "a-perlenkette",
+      "name": "Perlenkette",
+      "gruppe": "Hals",
+      "platz": "hals"
+    },
+    {
+      "id": "a-medaille",
+      "name": "Medaille",
+      "gruppe": "Hals",
+      "platz": "hals"
+    },
+    {
+      "id": "a-anzug",
+      "name": "Anzug",
+      "gruppe": "Kleidung",
+      "platz": "koerper"
+    },
+    {
+      "id": "a-smoking",
+      "name": "Smoking",
+      "gruppe": "Kleidung",
+      "platz": "koerper"
+    },
+    {
+      "id": "a-trikot-10",
+      "name": "Trikot 10",
+      "gruppe": "Kleidung",
+      "platz": "koerper"
+    }
+  ],
+  "anprobe": {
+    "skin": "Sonnenuntergang",
+    "augen": "Nachtsicht",
+    "hals": "Medaille",
+    "koerper": "Trikot 10"
+  },
+  "buehne": "Fehler 404"
+}
