@@ -1110,6 +1110,276 @@
       "id": "b-hallo-lucas",
       "name": "Hallo Lucas",
       "gruppe": "Im Gespräch"
+    },
+    {
+      "id": "b-salutieren",
+      "name": "Salutieren",
+      "gruppe": "Militär"
+    },
+    {
+      "id": "b-strammstehen",
+      "name": "Strammstehen",
+      "gruppe": "Militär"
+    },
+    {
+      "id": "b-gewehr-geschultert",
+      "name": "Gewehr geschultert",
+      "gruppe": "Militär"
+    },
+    {
+      "id": "b-im-gleichschritt",
+      "name": "Im Gleichschritt",
+      "gruppe": "Militär"
+    },
+    {
+      "id": "b-zielen",
+      "name": "Zielen",
+      "gruppe": "Militär"
+    },
+    {
+      "id": "b-schiessen",
+      "name": "Schießen",
+      "gruppe": "Militär"
+    },
+    {
+      "id": "b-dauerfeuer",
+      "name": "Dauerfeuer",
+      "gruppe": "Militär"
+    },
+    {
+      "id": "b-pistole-ziehen",
+      "name": "Pistole ziehen",
+      "gruppe": "Militär"
+    },
+    {
+      "id": "b-nachladen",
+      "name": "Nachladen",
+      "gruppe": "Militär"
+    },
+    {
+      "id": "b-granate-werfen",
+      "name": "Granate werfen",
+      "gruppe": "Militär"
+    },
+    {
+      "id": "b-in-deckung",
+      "name": "In Deckung",
+      "gruppe": "Militär"
+    },
+    {
+      "id": "b-robben",
+      "name": "Robben",
+      "gruppe": "Militär"
+    },
+    {
+      "id": "b-wache-stehen",
+      "name": "Wache stehen",
+      "gruppe": "Militär"
+    },
+    {
+      "id": "b-fernglas",
+      "name": "Fernglas",
+      "gruppe": "Militär"
+    },
+    {
+      "id": "b-funken",
+      "name": "Funken",
+      "gruppe": "Militär"
+    },
+    {
+      "id": "b-fahne-hissen",
+      "name": "Fahne hissen",
+      "gruppe": "Militär"
+    },
+    {
+      "id": "b-panzer-fahren",
+      "name": "Panzer fahren",
+      "gruppe": "Militär"
+    },
+    {
+      "id": "b-panzerschuss",
+      "name": "Panzerschuss",
+      "gruppe": "Militär"
+    },
+    {
+      "id": "b-bazooka",
+      "name": "Bazooka",
+      "gruppe": "Militär"
+    },
+    {
+      "id": "b-fallschirmsprung",
+      "name": "Fallschirmsprung",
+      "gruppe": "Militär"
+    },
+    {
+      "id": "b-tarnen",
+      "name": "Tarnen",
+      "gruppe": "Militär"
+    },
+    {
+      "id": "b-graben-schaufeln",
+      "name": "Graben schaufeln",
+      "gruppe": "Militär"
+    },
+    {
+      "id": "b-drill-liegestuetze",
+      "name": "Drill Liegestütze",
+      "gruppe": "Militär"
+    },
+    {
+      "id": "b-sanitaeter",
+      "name": "Sanitäter",
+      "gruppe": "Militär"
+    },
+    {
+      "id": "b-drohne-steuern",
+      "name": "Drohne steuern",
+      "gruppe": "Militär"
+    },
+    {
+      "id": "b-luftangriff",
+      "name": "Luftangriff",
+      "gruppe": "Militär"
+    },
+    {
+      "id": "b-periskop",
+      "name": "Periskop",
+      "gruppe": "Militär"
+    },
+    {
+      "id": "b-kanone-abfeuern",
+      "name": "Kanone abfeuern",
+      "gruppe": "Militär"
+    },
+    {
+      "id": "b-orden-bekommen",
+      "name": "Orden bekommen",
+      "gruppe": "Militär"
+    },
+    {
+      "id": "b-zapfenstreich",
+      "name": "Zapfenstreich",
+      "gruppe": "Militär"
+    },
+    {
+      "id": "b-marschtrommel",
+      "name": "Marschtrommel",
+      "gruppe": "Militär"
+    },
+    {
+      "id": "b-karte-studieren",
+      "name": "Karte studieren",
+      "gruppe": "Militär"
+    },
+    {
+      "id": "b-scharfschuetze",
+      "name": "Scharfschütze",
+      "gruppe": "Militär"
+    },
+    {
+      "id": "b-hechtsprung",
+      "name": "Hechtsprung",
+      "gruppe": "Militär"
+    },
+    {
+      "id": "b-minensuchen",
+      "name": "Minensuchen",
+      "gruppe": "Militär"
+    },
+    {
+      "id": "b-unter-stacheldraht",
+      "name": "Unter Stacheldraht",
+      "gruppe": "Militär"
+    },
+    {
+      "id": "b-schiessstand",
+      "name": "Schießstand",
+      "gruppe": "Militär"
+    },
+    {
+      "id": "b-feldflasche",
+      "name": "Feldflasche",
+      "gruppe": "Militär"
+    },
+    {
+      "id": "b-feldration",
+      "name": "Feldration",
+      "gruppe": "Militär"
+    },
+    {
+      "id": "b-kommandieren",
+      "name": "Kommandieren",
+      "gruppe": "Militär"
+    },
+    {
+      "id": "b-rueckzug",
+      "name": "Rückzug",
+      "gruppe": "Militär"
+    },
+    {
+      "id": "b-sieg",
+      "name": "Sieg",
+      "gruppe": "Militär"
+    },
+    {
+      "id": "b-kapitulieren",
+      "name": "Kapitulieren",
+      "gruppe": "Militär"
+    },
+    {
+      "id": "b-humpeln",
+      "name": "Humpeln",
+      "gruppe": "Militär"
+    },
+    {
+      "id": "b-schuetzengraben",
+      "name": "Schützengraben",
+      "gruppe": "Militär"
+    },
+    {
+      "id": "b-morsen",
+      "name": "Morsen",
+      "gruppe": "Militär"
+    },
+    {
+      "id": "b-waffe-putzen",
+      "name": "Waffe putzen",
+      "gruppe": "Militär"
+    },
+    {
+      "id": "b-hinterhalt",
+      "name": "Hinterhalt",
+      "gruppe": "Militär"
+    },
+    {
+      "id": "b-signalpistole",
+      "name": "Signalpistole",
+      "gruppe": "Militär"
+    },
+    {
+      "id": "b-kampfjet",
+      "name": "Kampfjet",
+      "gruppe": "Militär"
+    },
+    {
+      "id": "b-barett-zurechtruecken",
+      "name": "Barett zurechtrücken",
+      "gruppe": "Militär"
+    },
+    {
+      "id": "b-appell",
+      "name": "Appell",
+      "gruppe": "Militär"
+    },
+    {
+      "id": "b-sturmangriff",
+      "name": "Sturmangriff",
+      "gruppe": "Militär"
+    },
+    {
+      "id": "b-bombe-entschaerfen",
+      "name": "Bombe entschärfen",
+      "gruppe": "Militär"
     }
   ],
   "aussehen": [

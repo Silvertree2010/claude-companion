@@ -2541,6 +2541,612 @@
   neu("Laden", K1, (p, t) => { p.fx.push(fx("laden")); p.augen = "punkt"; p.mund = "flach"; atmen(p, t); }, { per: 2 });
   neu("Fehler 404", K1, (p, t) => { p.augen = "x"; p.glitch = ph(t, 2) < 0.3 ? 0.4 : 0.1; p.fx.push(fx("text", { txt: "404", farbe: "#d9443a", blink: true })); p.mund = "flach"; p.dreh = ph(t, 2) < 0.3 ? 5 : 0; }, { per: 2 });
   neu("Hallo Lucas", K1, (p, t) => { const q = ph(t, 1); p.armR = q < 0.5 ? "oben" : "hoch"; p.augen = "froh"; p.mund = "breit"; p.dy -= takt(t, 2, 2); p.fx.push(fx("text", { txt: "HI LUCAS", x: 32, y: 14 })); }, { per: 1 });
+
+  K1 = "Militär";
+  Object.assign(K.PROPS, {
+    helm: ["....EEEEEEEE....", "..EEeeeeeeeeEE..", ".EeeeeeeeeeeeeE.", "EEEEEEEEEEEEEEEE"],
+    barett: ["...RRRRRRR....", ".RrrrrrrrrrR..", "RRRRRRRRRRRRRy"],
+    offizierMuetze: ["..EEEEEEEEEE..", ".EEEEEEEEEEEE.", "EEEEEyyyyEEEEE", "kkkkkkkkkkkk.."],
+    gewehrV: ["k.", "k.", "kk", "k.", "k.", "k.", "Nk", "NN", "NN", "NN", ".N"],
+    gewehr: [".......k.....", "NNNNNkkkkkkkk", "NNN.Nk.k.....", "NN..........."],
+    pistole: ["kkkkk", "kkG..", "kk...", "k...."],
+    mg: ["......kk........", "gggggggggkkkkkkk", "ggg.gg.k.k......", "gg....kk........", ".....k...k......"],
+    granate: [".k.", "kSk", "eee", "eEe", "eee", ".e."],
+    fernglas: ["kkkkkkkk", "kSkkkkSk", "kkk..kkk"],
+    funkgeraet: ["k....", "k....", "k....", "k....", "eeeee", "eGkGe", "eeeee", "eEEEe"],
+    sandsack: [".tttttt.tttttt.tttttt.", "tttttttttttttttttttttt", "nttttnntttttnntttttttn", "..tttttt.tttttt.tttt..", ".tttttttttttttttttttt.", "nnnnnnnnnnnnnnnnnnnnnn"],
+    panzer: [
+      "........EEEEEEE...........",
+      "......EEeeeeeeeEkkkkkkkkkk",
+      "......EeeeeeeeeE..........",
+      "..EEEEEEEEEEEEEEEEEEEEE...",
+      ".EeeeeeeeeeeeeeeeeeeeeeE..",
+      "EeeeeeEeeeeeeeEeeeeeeeeeE.",
+      "gkkkkkkkkkkkkkkkkkkkkkkkkg",
+      "kGkGkGkGkGkGkGkGkGkGkGkGkk",
+      ".kkkkkkkkkkkkkkkkkkkkkkkk."
+    ],
+    bazooka: ["............kk", "eeeeeeeeeeeeek", "eEEEEEEEEEEEek", "...k.k........"],
+    fallschirm: [
+      ".......eeeeeeee.......",
+      "....eeeEEeeeeEEeee....",
+      "..eeeeeEEeeeeEEeeeee..",
+      ".eeeeeeEEeeeeEEeeeeee.",
+      "eeeeeeeEEeeeeEEeeeeeee",
+      "k.....................k",
+      ".k...................k.",
+      "..k.................k..",
+      "...k...............k...",
+      "....k.............k....",
+      ".....k...........k....."
+    ],
+    busch: ["....eee..ee.....", "..eelee.eelee...", ".eeeleeeeeeeeee.", "eeleeeeeleeeelee", "eeeeeEeeeeeeeeee", "eEeeeeeeeEeeeeEe", "eeeeeEeeeeeEeeee", ".eEeeeeEeeeeeEe.", "..eeeEeeeeeeee.."],
+    schaufel: ["n..", "n..", "n..", "n..", "n..", "n..", "SSS", "SSS", ".S."],
+    feldflasche: ["..k..", ".eee.", "eeeee", "eEEEe", ".eee."],
+    sanikoffer: ["..kk..", "wwwwww", "wwrrww", "wrrrrw", "wwrrww", "wwwwww"],
+    drohne: [["SS....SS", "kkkkkkkk", "..kggk..", "...kk..."], ["..SSSS..", "kkkkkkkk", "..kggk..", "...kk..."]],
+    jetGross: ["k.........................", "kk........................", "kGk...........GGG.........", "kGGGGGGGGGGGGGGGGGGGGGGk..", "kGGGGGGGGGGGGGGGGGGGGGGGGk", ".kGGGGGGkkkkkkGGGGGGGGGGk.", "......GGGGGk.............."],
+    jet: ["k...........", "kk....GG....", "GGGGGGGGGGk.", "kGGGGGGGGGGG", "....GG......"],
+    periskop: ["kkkk", "kSSk", "k...", "k...", "k...", "k...", "k...", "k...", "k...", "k..."],
+    kanone: ["..............kk", "............kkk.", "..........kkk...", "........kkk.....", ".....eekkk......", "...eeeeee.......", ".NNNNeeee.......", "N.N.N..e........", "NNNNN...ee......", "N.N.N..........."],
+    orden: ["rbr", "rbr", ".y.", "yyy", ".y."],
+    zielscheibe: ["..rrrrr..", ".rwwwwwr.", "rwwrrrwwr", "rwrwwwrwr", "rwrwrwrwr", "rwrwwwrwr", "rwwrrrwwr", ".rwwwwwr.", "..rrrrr..", "....n....", "....n....", "...n.n...", "..n...n.."],
+    stacheldraht: ["k...k...k...k...k...k...k...k", ".k.k.k.k.k.k.k.k.k.k.k.k.k.k.", "kkkkkkkkkkkkkkkkkkkkkkkkkkkkk", ".k.k.k.k.k.k.k.k.k.k.k.k.k.k.", "k...k...k...k...k...k...k...k"],
+    pfosten: ["n", "n", "n", "n", "n", "n", "n"],
+    dose: ["SSSS", "SeeS", "SeeS", "SSSS"],
+    weisseFahne: ["kwwwww", "kwwwww", "kwwwww", "kwwwww", "k.....", "k.....", "k.....", "k....."],
+    signalpistole: ["oooo", "oo..", "o..."],
+    lampe: ["kkSS", "kkSS"],
+    minensucher: ["k.......", ".k......", "..k.....", "...k....", "....k...", ".....k..", "......k.", "....SSSS"],
+    verband: ["wwwwwwwwwwwwww", "............ww", "............w."],
+    graben: ["..nnnnnnnnnnnnnnnnnnnnnnnnnnnnn..", ".nNnnnnnNnnnnnNnnnnnnNnnnnnnNnnn.", "nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn", "nnNnnnnnnnnNnnnnnnnnNnnnnnnnnNnnn", "NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN"],
+    patrone: ["y", "Y"],
+    tuch: ["SSS", "SwS"],
+    mine: ["..kk..", ".gGGg.", "gggggg"]
+  });
+  const schuss = (ox, oy, n = 3, tempo = 2.5, farbe = "#f5d03b") => fx("fn", { fn: (c, t, rr) => {
+    const x0 = rr.handR.x + ox, y0 = rr.handR.y + oy;
+    if (Math.floor(t * 14) % 2) { K.px(c, x0, y0 - 1, "#f28c28", 2, 3); K.px(c, x0 + 2, y0, "#f5d03b", 1, 1); }
+    for (let k = 0; k < n; k++) { const q = (t * tempo + k / n) % 1; K.px(c, x0 + 3 + q * 26, y0, farbe, 2, 1); }
+  } });
+  const explosion = (x, y, gross = 1) => fx("fn", { fn: (c, t) => {
+    const q = (t * 0.9) % 1;
+    if (q < 0.45) for (let k = 0; k < 12; k++) { const a = (k / 12) * TAU, d = q * 22 * gross; K.px(c, x + Math.cos(a) * d, y + Math.sin(a) * d * 0.7, k % 3 ? "#f28c28" : "#f5d03b", 2, 2); }
+    if (q > 0.2) for (let k = 0; k < 4; k++) K.px(c, x - 4 + k * 3 + Math.sin(q * 6 + k) * 2, y - (q - 0.2) * 20 - k, k % 2 ? "#8b877d" : "#c8c4b8", 2, 2);
+  } });
+  const fliegt = (map, y, tempo = 0.6, links = false) => fx("fn", { fn: (c, t, rr, i) => {
+    const q = (t * tempo) % 1;
+    const x = links ? K.W + 4 - q * (K.W + 20) : -16 + q * (K.W + 20);
+    K.zeichne(c, map, x, y, i.f, links);
+  } });
+
+  neu("Salutieren", K1, (p, t) => {
+    const q = ph(t, 3);
+    p.props.push(pr("helm", "kopf", 0, 1));
+    p.armR = q < 0.15 ? "halb" : "kopf";
+    p.aR[0] = 2;
+    p.augen = q < 0.15 ? "offen" : "halb";
+    p.mund = "flach";
+    p.bh += q > 0.15 ? 1 : 0;
+  }, { per: 3 });
+  neu("Strammstehen", K1, (p, t) => {
+    p.props.push(pr("helm", "kopf", 0, 1));
+    p.armL = p.armR = "unten";
+    p.bh += 1;
+    p.bw -= 1;
+    p.augen = "halb";
+    p.mund = "flach";
+    blinzeln(p, t);
+    if (ph(t, 6) > 0.9) { p.ex = takt(t, 4, 2) ? 1 : -1; p.augen = "seitlich"; }
+  }, { per: 6 });
+  neu("Gewehr geschultert", K1, (p, t) => {
+    const k = gehen(p, t, 1.6, { hub: 1, arme: true });
+    p.props.push(pr("helm", "kopf", 0, 1), pr("gewehrV", "handR", -1, 6));
+    p.armR = "halb";
+    p.armL = k < 4 ? "raus" : "tief";
+    p.lift = k < 4 ? [2, 0, 2, 0] : [0, 2, 0, 2];
+    p.augen = "halb";
+    p.mund = "flach";
+  }, { laeuft: 12, per: 1 });
+  neu("Im Gleichschritt", K1, (p, t) => {
+    const k = gehen(p, t, 1.5, { hub: 1 });
+    p.props.push(pr("helm", "kopf", 0, 1));
+    p.klon = 16; p.klonAlpha = 0.85;
+    p.augen = "halb";
+    p.mund = k % 4 === 0 ? "o" : "flach";
+    p.fx.push(fx("text", { txt: k < 4 ? "LINKS" : "ZWO", y: 6 }));
+  }, { laeuft: 10, per: 1.33 });
+  neu("Zielen", K1, (p, t) => {
+    p.props.push(pr("helm", "kopf", 0, 1), pr("gewehr", "vorne", 10, -1));
+    p.armL = p.armR = "vorne";
+    p.aR[0] = 3;
+    p.augen = ph(t, 3) < 0.9 ? "schlitz" : "zu";
+    p.ex = 2;
+    p.mund = "flach";
+    p.dreh = sin(t, 0.3) * 1.5;
+  }, { per: 3 });
+  neu("Schießen", K1, (p, t) => {
+    const q = ph(t, 1.2);
+    p.props.push(pr("helm", "kopf", 0, 1), pr("gewehr", "vorne", q < 0.15 ? 9 : 10, -1));
+    p.armL = p.armR = "vorne";
+    p.aR[0] = 3;
+    p.augen = "wuetend";
+    p.ex = 2;
+    p.mund = q < 0.15 ? "zaehne" : "flach";
+    if (q < 0.15) { p.dx -= 1; p.dreh = -3 * v(p); p.fx.push(schuss(9, 0, 1, 4)); }
+  }, { per: 1.2 });
+  neu("Dauerfeuer", K1, (p, t) => {
+    p.props.push(pr("helm", "kopf", 0, 1), pr("mg", "vorne", 12, -1));
+    p.armL = p.armR = "vorne";
+    p.aR[0] = 4;
+    zittern(p, t, 0.6);
+    p.augen = "wuetend";
+    p.mund = "zaehne";
+    p.fx.push(schuss(12, 0, 4, 3), fx("fn", { fn: (c, tt, rr) => { for (let k = 0; k < 3; k++) { const q = (tt * 2 + k / 3) % 1; K.px(c, rr.handR.x + 4 - q * 3, rr.handR.y + q * 10, "#f5d03b"); } } }));
+  }, { per: 2 });
+  neu("Pistole ziehen", K1, (p, t) => {
+    const { q } = kp(p, t, 2.5, [
+      { q: 0, armR: "tief", augen: "schlitz", mund: "flach", ex: 1 },
+      { q: 0.3, armR: "tief", augen: "schlitz", mund: "flach", ex: 1, bh: -1 },
+      { q: 0.38, armR: "raus", aR: [1, 0], augen: "wuetend", mund: "schief", dx: 1 },
+      { q: 0.9, armR: "raus", aR: [1, 0], augen: "wuetend", mund: "schief", dx: 1 }
+    ]);
+    p.props.push(pr("pistole", q < 0.36 ? "griffR" : "handR", q < 0.36 ? -2 : 0, q < 0.36 ? 1 : -1));
+    if (q > 0.5 && q < 0.6) p.fx.push(schuss(5, -1, 1, 4));
+    p.props.push(pr("offizierMuetze", "kopf", 0, 0));
+  }, { per: 2.5 });
+  neu("Nachladen", K1, (p, t) => {
+    const q = ph(t, 2);
+    p.props.push(pr("helm", "kopf", 0, 1), pr("gewehr", "vorne", 4, 1));
+    p.armL = "vorne";
+    p.armR = q < 0.5 ? "tief" : "vorne";
+    p.aR[1] = q < 0.5 ? 0 : takt(t, 6, 2);
+    p.augen = "halb";
+    p.ey = 1;
+    p.mund = "klein";
+    if (q > 0.5 && q < 0.6) p.fx.push(fx("text", { txt: "KLACK", y: 8 }));
+    if (q < 0.5) p.props.push(pr("patrone", "handR", 0, -1));
+  }, { per: 2 });
+  neu("Granate werfen", K1, (p, t) => {
+    const q = ph(t, 3);
+    p.props.push(pr("helm", "kopf", 0, 1));
+    if (q < 0.3) { p.armR = "vorne"; p.props.push(pr("granate", "handR", -1, 0)); p.mund = "zaehne"; p.augen = "wuetend"; p.bh -= takt(t, 4, 2); }
+    else if (q < 0.4) { p.armR = "oben"; p.props.push(pr("granate", "handR", -2, -1)); p.dreh = -8 * v(p); p.mund = "offen"; }
+    else if (q < 0.65) { p.armR = "raus"; p.fx.push(fx("wurf", { map: K.PROPS.granate })); p.augen = "gross"; p.mund = "o"; }
+    else { p.armL = p.armR = "kopf"; p.bh -= 2; p.bw += 1; p.augen = "zu"; p.mund = "zaehne"; p.fx.push(explosion(42, 26)); }
+  }, { per: 3 });
+  neu("In Deckung", K1, (p, t) => {
+    const q = ph(t, 4);
+    p.props.push(pr("helm", "kopf", 0, 1), pr("sandsack", "boden", -4, 0));
+    if (q < 0.5) { p.bh -= 3; p.bw += 1; p.dy += 2; p.augen = "gross"; p.ex = takt(t, 2, 2) ? 2 : -2; p.mund = "flach"; }
+    else if (q < 0.8) { p.dy += 0; p.augen = "schlitz"; p.ex = 2; p.mund = "flach"; }
+    else { p.bh -= 3; p.dy += 2; p.augen = "zu"; p.mund = "zaehne"; p.fx.push(fx("knall", { x: 40, y: 18 })); }
+  }, { per: 4 });
+  neu("Robben", K1, (p, t) => {
+    const k = takt(t, 4, 4);
+    liegen(p, 90 * v(p));
+    p.dy += 1;
+    p.props.push(pr("helm", "kopf", 0, 1));
+    p.armL = k < 2 ? "oben" : "halb";
+    p.armR = k < 2 ? "halb" : "oben";
+    p.lift = k % 2 ? [1, 0, 1, 0] : [0, 1, 0, 1];
+    p.augen = "schlitz";
+    p.mund = "flach";
+    p.fx.push(fx("staub", { rechts: p.spiegel }));
+  }, { laeuft: 6, per: 1 });
+  neu("Wache stehen", K1, (p, t) => {
+    const q = ph(t, 8);
+    p.props.push(pr("helm", "kopf", 0, 1), pr("gewehrV", "handR", -1, 6));
+    p.armR = "halb";
+    p.bh += 1;
+    p.augen = q < 0.6 ? "halb" : q < 0.8 ? "seitlich" : "offen";
+    p.ex = q < 0.6 ? 0 : q < 0.8 ? -2 : 2;
+    p.mund = "flach";
+    if (q > 0.92) { p.augen = "zu"; p.dy += 1; p.fx.push(fx("zzz")); }
+  }, { per: 8 });
+  neu("Fernglas", K1, (p, t) => {
+    const q = ph(t, 5);
+    p.props.push(pr("helm", "kopf", 0, 1), pr("fernglas", "augen", 0, 0));
+    p.armL = p.armR = "kopf";
+    p.ex = Math.round(sin(t, 0.2) * 3);
+    p.dreh = sin(t, 0.2) * 5;
+    p.mund = q > 0.8 ? "o" : "flach";
+    if (q > 0.8) p.fx.push(fx("ausruf"));
+  }, { per: 5 });
+  neu("Funken", K1, (p, t) => {
+    const k = takt(t, 3, 4);
+    p.props.push(pr("helm", "kopf", 0, 1), pr("funkgeraet", "handR", -1, 2));
+    p.armR = "mund";
+    p.mund = k % 2 ? "offen" : "o";
+    p.augen = "halb";
+    p.fx.push(fx("schall"), fx("text", { txt: ["OVER", "ROGER", "COPY", "OVER"][Math.floor(t / 1.5) % 4], y: 6 }));
+  }, { per: 3 });
+  neu("Fahne hissen", K1, (p, t) => {
+    const q = ph(t, 5);
+    const h = r(Math.min(1, q / 0.7) * 14);
+    p.props.push(pr("helm", "kopf", 0, 1), pr("flagge", "boden", 10, -14 + 14 - h - 8));
+    p.armL = p.armR = takt(t, 3, 2) ? "oben" : "hoch";
+    p.ex = 2;
+    p.ey = -1;
+    p.augen = q > 0.7 ? "froh" : "offen";
+    p.mund = q > 0.7 ? "breit" : "flach";
+    if (q > 0.7) p.fx.push(fx("funkeln", { n: 3 }));
+  }, { per: 5 });
+  neu("Panzer fahren", K1, (p, t) => {
+    p.props.push(pr("panzer", "boden", -13, 0), pr("helm", "kopf", 0, 1));
+    p.dy -= 6;
+    p.beine = "sitzen";
+    p.armR = "oben";
+    p.aR[0] = takt(t, 2, 2);
+    p.augen = "froh";
+    p.mund = "breit";
+    p.dy += takt(t, 6, 2);
+    p.fx.push(fx("staub", { rechts: false }), fx("rauch", { x: 6, y: 30 }));
+  }, { laeuft: 9, per: 1 });
+  neu("Panzerschuss", K1, (p, t) => {
+    const q = ph(t, 3);
+    p.props.push(pr("panzer", "boden", -13, q < 0.1 ? 1 : 0), pr("helm", "kopf", 0, 1));
+    p.dy -= 6;
+    p.beine = "sitzen";
+    p.armL = p.armR = q < 0.1 ? "kopf" : "unten";
+    p.augen = q < 0.3 ? "zu" : "froh";
+    p.mund = q < 0.3 ? "zaehne" : "breit";
+    if (q < 0.1) p.fx.push(fx("fn", { fn: (c) => K.px(c, 39, 26, "#f5d03b", 4, 3) }));
+    if (q > 0.05 && q < 0.6) p.fx.push(explosion(44, 18, 0.6));
+  }, { per: 3 });
+  neu("Bazooka", K1, (p, t) => {
+    const q = ph(t, 3);
+    p.props.push(pr("helm", "kopf", 0, 1), pr("bazooka", "vorne", 4, -6));
+    p.armL = p.armR = "vorne";
+    p.aL[1] = -3;
+    p.aR[1] = -3;
+    p.ex = 2;
+    p.augen = q < 0.5 ? "schlitz" : "gross";
+    p.mund = q < 0.5 ? "flach" : "o";
+    if (q > 0.5 && q < 0.58) { p.dx -= 2; p.fx.push(fx("rauch", { x: 10, y: 22 })); }
+    if (q > 0.55) p.fx.push(fx("fn", { fn: (c, tt) => { const u = (q - 0.55) / 0.45; K.px(c, 34 + u * 14, 23, "#55524b", 3, 2); K.px(c, 33 + u * 14, 23, "#f28c28", 1, 2); } }));
+  }, { per: 3 });
+  neu("Fallschirmsprung", K1, (p, t) => {
+    const q = ph(t, 6);
+    p.props.push(pr("fallschirm", "ueber", 0, 1), pr("helm", "kopf", 0, 1));
+    p.armL = p.armR = "oben";
+    p.dy -= r(10 - q * 10);
+    p.dx += r(sin(t, 0.4) * 2);
+    p.dreh = sin(t, 0.4) * 6;
+    p.lift = [1, 1, 1, 1];
+    p.augen = q < 0.8 ? "froh" : "gross";
+    p.mund = q < 0.8 ? "breit" : "o";
+  }, { per: 6 });
+  neu("Tarnen", K1, (p, t) => {
+    const q = ph(t, 6);
+    p.props.push(pr("busch", "boden", -8, 2));
+    p.beine = "sitzen";
+    p.bh -= 1;
+    p.augen = "schlitz";
+    p.ex = q < 0.5 ? -2 : 2;
+    p.mund = null;
+    if (q > 0.85) { p.beine = "stehen"; p.augen = "gross"; }
+  }, { per: 6 });
+  neu("Graben schaufeln", K1, (p, t) => {
+    const k = takt(t, 2, 2);
+    p.props.push(pr("helm", "kopf", 0, 1), pr("schaufel", "griffR", -1, 0, { }));
+    p.armR = k ? "tief" : "vorne";
+    p.armL = "vorne";
+    p.dreh = (k ? 10 : -4) * v(p);
+    p.bh -= k;
+    p.mund = "zaehne";
+    p.augen = "halb";
+    p.fx.push(fx("schweiss"));
+    if (k) p.fx.push(fx("fn", { fn: (c, tt) => { const u = (tt * 2) % 1; for (let j = 0; j < 3; j++) K.px(c, 34 + u * 6 + j, 33 - Math.sin(u * Math.PI) * 6, "#9b6b3d"); } }));
+  }, { per: 1 });
+  neu("Drill Liegestütze", K1, (p, t) => {
+    const k = takt(t, 1.5, 2);
+    liegen(p, 90 * v(p));
+    p.props.push(pr("helm", "kopf", 0, 1));
+    p.armL = p.armR = "tief";
+    p.dy += k ? 0 : 2;
+    p.mund = k ? "zaehne" : "offen";
+    p.augen = "halb";
+    p.fx.push(fx("schweiss"), fx("text", { txt: String(1 + Math.floor(t * 0.75) % 20), y: 6 }));
+  }, { per: 1.33 });
+  neu("Sanitäter", K1, (p, t) => {
+    const q = ph(t, 3);
+    p.props.push(pr("sanikoffer", "handR", -1, 2), pr("verband", "kopf", 0, 1));
+    if (q < 0.5) { gehen(p, t, 3, { hub: 1 }); p.augen = "gross"; p.mund = "o"; }
+    else { p.armR = "vorne"; p.armL = "vorne"; p.bh -= 1; p.augen = "froh"; p.mund = "laecheln"; p.fx.push(fx("herzen")); }
+    p.fx.push(fx("fn", { fn: (c, tt, rr) => { K.px(c, rr.cx - 1, rr.oben + 1, "#d9443a", 3, 1); K.px(c, rr.cx, rr.oben, "#d9443a", 1, 3); } }));
+  }, { per: 3 });
+  neu("Drohne steuern", K1, (p, t) => {
+    p.props.push(pr("controller", "vorne", 0, 1), pr("drohne", "ueber", r(sin(t, 0.3) * 12), r(sin(t, 0.5) * 3) - 4, { fps: 12 }));
+    p.armL = p.armR = "vorne";
+    p.aL[1] = -takt(t, 6, 2);
+    p.ey = -2;
+    p.ex = r(sin(t, 0.3) * 2);
+    p.augen = "gross";
+    p.mund = "zunge";
+  }, { per: 4 });
+  neu("Luftangriff", K1, (p, t) => {
+    const q = ph(t, 4);
+    p.props.push(pr("helm", "kopf", 0, 1));
+    p.fx.push(fliegt(K.PROPS.jet, 3, 0.25));
+    if (q < 0.4) { p.ey = -2; p.augen = "gross"; p.mund = "o"; p.armR = "oben"; }
+    else { p.armL = p.armR = "kopf"; p.bh -= 2; p.bw += 1; p.augen = "zu"; p.mund = "zaehne"; zittern(p, t, 1); p.fx.push(explosion(8, 30, 0.7), explosion(40, 28, 0.8)); }
+  }, { per: 4 });
+  neu("Periskop", K1, (p, t) => {
+    const q = ph(t, 5);
+    const hoch = r(Math.min(1, q / 0.2) * 8) - (q > 0.85 ? r(((q - 0.85) / 0.15) * 8) : 0);
+    p.beine = "sitzen";
+    p.bh -= 5;
+    p.dy += 2;
+    p.augen = "zu";
+    p.props.push(pr("periskop", "kopf", 2, 4 - hoch, { spiegel: ph(t, 2.5) > 0.5, ebene: "hinten" }), pr("graben", "boden", -16, 0));
+  }, { per: 5 });
+  neu("Kanone abfeuern", K1, (p, t) => {
+    const q = ph(t, 3);
+    p.props.push(pr("kanone", "boden", 8, q < 0.08 ? 1 : 0, { ebene: "hinten" }), pr("helm", "kopf", 0, 1));
+    p.dx -= 6;
+    p.armR = q < 0.2 ? "raus" : "kopf";
+    p.armL = q < 0.2 ? "tief" : "kopf";
+    p.augen = q < 0.2 ? "schlitz" : "zu";
+    p.mund = q < 0.2 ? "flach" : "zaehne";
+    if (q > 0.2 && q < 0.35) p.fx.push(fx("fn", { fn: (c) => K.px(c, 40, 20, "#f5d03b", 5, 4) }), fx("rauch", { x: 42, y: 20 }));
+    if (q > 0.2) zittern(p, t, q < 0.35 ? 1 : 0);
+  }, { per: 3 });
+  neu("Orden bekommen", K1, (p, t) => {
+    const q = ph(t, 4);
+    p.props.push(pr("offizierMuetze", "kopf", 0, 0));
+    if (q > 0.3) p.props.push(pr("orden", "vorne", -4, 4));
+    p.armR = q < 0.3 ? "kopf" : "unten";
+    p.aR[0] = 2;
+    p.bh += 1;
+    p.augen = q < 0.3 ? "halb" : "stern";
+    p.mund = q < 0.3 ? "flach" : "breit";
+    if (q > 0.3 && q < 0.6) p.fx.push(fx("funkeln", { n: 4 }));
+  }, { per: 4 });
+  neu("Zapfenstreich", K1, (p, t) => {
+    p.props.push(pr("trompete", "vorne", 6, -2), pr("offizierMuetze", "kopf", 0, 0));
+    p.armL = p.armR = "vorne";
+    p.augen = "zu";
+    p.bw += takt(t, 2, 2);
+    p.dreh = -8 * v(p);
+    p.fx.push(fx("noten"));
+  }, { per: 4 });
+  neu("Marschtrommel", K1, (p, t) => {
+    const k = gehen(p, t, 1.4, { arme: true });
+    p.props.push(pr("trommel", "vorne", 0, 4), pr("helm", "kopf", 0, 1));
+    p.armL = p.armR = "vorne";
+    p.aL[1] = k % 2 ? -2 : 0;
+    p.aR[1] = k % 2 ? 0 : -2;
+    p.augen = "halb";
+    p.mund = "flach";
+    p.fx.push(fx("schall"));
+  }, { laeuft: 10, per: 1.14 });
+  neu("Karte studieren", K1, (p, t) => {
+    const q = ph(t, 5);
+    p.props.push(pr("karte", "vorne", 0, 4), pr("offizierMuetze", "kopf", 0, 0));
+    p.armL = p.armR = "vorne";
+    p.ey = 2;
+    p.ex = r(sin(t, 0.3) * 2);
+    p.augen = q > 0.8 ? "gross" : "halb";
+    p.mund = q > 0.8 ? "o" : "flach";
+    if (q > 0.8) p.fx.push(fx("idee"));
+  }, { per: 5 });
+  neu("Scharfschütze", K1, (p, t) => {
+    const q = ph(t, 5);
+    liegen(p, 90 * v(p));
+    p.dy += 1;
+    p.props.push(pr("helm", "kopf", 0, 1), pr("gewehrV", "ueber", 4, 4));
+    p.armR = "oben";
+    p.augen = q < 0.85 ? "schlitz" : "zu";
+    p.mund = "flach";
+    if (q > 0.85 && q < 0.9) p.fx.push(schuss(10, -3, 1, 5));
+  }, { per: 5 });
+  neu("Hechtsprung", K1, (p, t) => {
+    const q = ph(t, 2.5);
+    p.props.push(pr("helm", "kopf", 0, 1));
+    if (q < 0.15) { p.augen = "gross"; p.mund = "o"; p.bh -= 1; p.fx.push(fx("ausruf")); }
+    else if (q < 0.5) { const u = (q - 0.15) / 0.35; p.dx += r(u * 12); p.dy -= r(Math.sin(u * Math.PI) * 7); p.dreh = 90 * u * v(p); p.armL = p.armR = "oben"; p.lift = [1, 1, 1, 1]; p.augen = "zu"; p.fx.push(explosion(10, 30, 0.6)); }
+    else { liegen(p, 90 * v(p)); p.dx += 12; p.armL = p.armR = "kopf"; p.augen = "x"; p.mund = "flach"; }
+  }, { per: 2.5 });
+  neu("Minensuchen", K1, (p, t) => {
+    const q = ph(t, 6);
+    p.props.push(pr("helm", "kopf", 0, 1), pr("minensucher", "griffR", -1, 0));
+    gehen(p, t, 0.6, { hub: 0, arme: true });
+    p.armR = "vorne";
+    p.ey = 2;
+    p.augen = "halb";
+    p.mund = "flach";
+    if (q > 0.7) { p.lift = [0, 0, 0, 0]; p.augen = "gross"; p.mund = "o"; p.props.push(pr("mine", "boden", 12, 0)); p.fx.push(fx("text", { txt: "PIEP", y: 6, blink: true, farbe: "#d9443a" })); zittern(p, t, 0.5); }
+  }, { per: 6 });
+  neu("Unter Stacheldraht", K1, (p, t) => {
+    const k = takt(t, 3, 4);
+    p.beine = "sitzen";
+    p.bh -= 3;
+    p.bw += 2;
+    p.props.push(pr("helm", "kopf", 0, 1), pr("stacheldraht", "boden", -14, -9), pr("pfosten", "boden", -15, 0), pr("pfosten", "boden", 14, 0));
+    p.armL = p.armR = "vorne";
+    p.aL[0] = k < 2 ? -2 : 0;
+    p.aR[0] = k < 2 ? 0 : 2;
+    p.dx += [0, 1, 0, -1][k];
+    p.augen = "zu";
+    p.mund = "zaehne";
+  }, { per: 1.33 });
+  neu("Schießstand", K1, (p, t) => {
+    const q = ph(t, 1.5);
+    p.props.push(pr("helm", "kopf", 0, 1), pr("pistole", "handR", 0, -1), pr("zielscheibe", "boden", 13, 0));
+    p.dx -= 6;
+    p.armR = "raus";
+    p.augen = "schlitz";
+    p.ex = 2;
+    p.mund = "flach";
+    if (q < 0.12) { p.fx.push(schuss(5, -1, 1, 6)); p.dreh = -3 * v(p); }
+    if (Math.floor(t / 1.5) % 4 === 3) { p.augen = "froh"; p.mund = "breit"; p.fx.push(fx("text", { txt: "10", x: 38, y: 6, farbe: "#d9443a" })); }
+  }, { per: 1.5 });
+  neu("Feldflasche", K1, (p, t) => {
+    const q = ph(t, 4);
+    p.props.push(pr("helm", "kopf", 0, 1), pr("feldflasche", q < 0.6 ? "handR" : "griffR", q < 0.6 ? -3 : -1, q < 0.6 ? -4 : 1));
+    p.armR = q < 0.6 ? "mund" : "tief";
+    p.dreh = q < 0.6 ? -10 * v(p) : 0;
+    p.augen = q < 0.6 ? "zu" : "froh";
+    p.mund = q < 0.6 ? "klein" : "laecheln";
+    if (q > 0.6 && q < 0.75) p.fx.push(fx("text", { txt: "AH", y: 8 }));
+  }, { per: 4 });
+  neu("Feldration", K1, (p, t) => {
+    const k = takt(t, 2, 2);
+    p.beine = "sitzen";
+    p.props.push(pr("helm", "kopf", 0, 1), pr("dose", "vorne", 1, 5));
+    p.armL = "vorne";
+    p.armR = k ? "mund" : "vorne";
+    p.augen = ph(t, 6) > 0.8 ? "traurig" : "halb";
+    p.mund = k ? "o" : "flach";
+    p.fx.push(fx("dampf", { x: 25, y: 26 }));
+  }, { per: 3 });
+  neu("Kommandieren", K1, (p, t) => {
+    const q = ph(t, 2);
+    p.props.push(pr("offizierMuetze", "kopf", 0, 0));
+    p.armR = q < 0.5 ? "raus" : "oben";
+    p.armL = "tief";
+    p.augen = "wuetend";
+    p.mund = "gross";
+    p.dy -= q > 0.5 && q < 0.6 ? 1 : 0;
+    p.fx.push(fx("text", { txt: ["LOS", "VORWAERTS", "ABTEILUNG", "HALT"][Math.floor(t / 2) % 4], y: 6, huepf: true }), fx("schall"));
+  }, { per: 2 });
+  neu("Rückzug", K1, (p, t) => {
+    gehen(p, t, 4, { hub: 2, arme: true });
+    p.props.push(pr("helm", "kopf", 0, 1 + takt(t, 6, 2)));
+    p.armL = p.armR = "oben";
+    p.dreh = 10 * v(p);
+    p.augen = "gross";
+    p.mund = "gross";
+    p.fx.push(fx("schweiss"), fx("tempo", { rechts: p.spiegel }), fx("text", { txt: "RUECKZUG", y: 6, blink: true }));
+  }, { laeuft: 24, per: 0.5 });
+  neu("Sieg", K1, (p, t) => {
+    const q = huepfen(p, t, 1.2, 4);
+    p.props.push(pr("helm", "kopf", 0, 1), pr("flagge", "handR", -1, -4));
+    p.armR = "oben";
+    p.armL = takt(t, 3, 2) ? "oben" : "hoch";
+    p.augen = "froh";
+    p.mund = q < 0.12 ? "laecheln" : "breit";
+    p.fx.push(fx("konfetti"));
+  }, { per: 0.83 });
+  neu("Kapitulieren", K1, (p, t) => {
+    const q = ph(t, 4);
+    p.props.push(pr("weisseFahne", "handR", -1, 0));
+    p.armR = "oben";
+    p.armL = "oben";
+    p.aR[0] = takt(t, 3, 2);
+    p.augen = q < 0.7 ? "traurig" : "seitlich";
+    p.mund = "traurig";
+    p.bh -= 1;
+    p.fx.push(fx("schweiss"));
+  }, { per: 4 });
+  neu("Humpeln", K1, (p, t) => {
+    const k = gehen(p, t, 0.9, { hub: 0, arme: true });
+    p.props.push(pr("verband", "kopf", 0, 1));
+    p.lift = k < 4 ? [0, 2, 0, 0] : [0, 0, 0, 0];
+    p.dreh = (k < 4 ? 5 : -2) * v(p);
+    p.armL = "tief";
+    p.augen = "traurig";
+    p.mund = "schief";
+  }, { laeuft: 5, per: 1.1 });
+  neu("Schützengraben", K1, (p, t) => {
+    const q = ph(t, 5);
+    const raus = q > 0.35 && q < 0.75;
+    p.props.push(pr("graben", "boden", -16, 0), pr("helm", "kopf", 0, 1));
+    if (!raus) { p.beine = "sitzen"; p.bh -= 4; }
+    p.augen = raus ? "schlitz" : "halb";
+    p.ex = raus ? r(sin(t, 0.6) * 3) : 0;
+    p.mund = "flach";
+    if (raus && ph(t, 1.25) < 0.1) p.fx.push(fx("knall", { x: 38, y: 12 }));
+  }, { per: 5 });
+  neu("Morsen", K1, (p, t) => {
+    const muster = "1011100010101000111011101000";
+    const an = muster[Math.floor(t * 5) % muster.length] === "1";
+    p.props.push(pr("lampe", "handR", -1, 0), pr("helm", "kopf", 0, 1));
+    p.armR = "raus";
+    p.augen = "halb";
+    p.mund = "flach";
+    if (an) p.fx.push(fx("fn", { fn: (c, tt, rr) => { K.px(c, rr.handR.x + 3, rr.handR.y - 1, "#f5d03b", 2, 2); K.px(c, rr.handR.x + 5, rr.handR.y - 2, "#fff6b0", 6, 4); } }));
+    p.fx.push(fx("text", { txt: "SOS", y: 6, farbe: "#f5d03b" }));
+  }, { per: 5.6 });
+  neu("Waffe putzen", K1, (p, t) => {
+    const k = takt(t, 4, 2);
+    p.beine = "sitzen";
+    p.props.push(pr("gewehr", "vorne", 2, 2), pr("tuch", "handR", -2 + k * 2, 2), pr("helm", "boden", -18, 0));
+    p.armL = "vorne";
+    p.armR = "vorne";
+    p.aR[0] = k * 2;
+    p.ey = 2;
+    p.augen = "halb";
+    p.mund = "pfeifen";
+    if (ph(t, 4) > 0.8) p.fx.push(fx("funkeln", { n: 2 }));
+  }, { per: 4 });
+  neu("Hinterhalt", K1, (p, t) => {
+    const q = ph(t, 4);
+    p.props.push(pr("busch", "boden", -8, 0));
+    if (q < 0.6) { p.beine = "sitzen"; p.bh -= 4; p.augen = "schlitz"; p.ex = r(sin(t, 0.5) * 2); p.mund = null; }
+    else if (q < 0.7) { p.dy -= 4; p.lift = [1, 1, 1, 1]; p.armL = p.armR = "oben"; p.augen = "gross"; p.mund = "gross"; p.fx.push(fx("text", { txt: "BUH", y: 4 })); }
+    else { p.armL = p.armR = "oben"; p.augen = "froh"; p.mund = "breit"; }
+  }, { per: 4 });
+  neu("Signalpistole", K1, (p, t) => {
+    const q = ph(t, 3);
+    p.props.push(pr("helm", "kopf", 0, 1), pr("signalpistole", "handR", -2, -2));
+    p.armR = "oben";
+    p.ey = -2;
+    p.augen = "gross";
+    p.mund = "o";
+    if (q > 0.15) p.fx.push(fx("fn", { fn: (c) => { const u = (q - 0.15) / 0.85; const y = 18 - u * 40 + u * u * 22; K.px(c, 34 + u * 6, y, u > 0.4 ? "#d9443a" : "#f28c28", 2, 2); } }));
+  }, { per: 3 });
+  neu("Kampfjet", K1, (p, t) => {
+    p.ohneFigur = false;
+    p.props.push(pr("jetGross", "boden", -13, -8), pr("helm", "kopf", 0, 1));
+    p.dy -= 12;
+    p.beine = "sitzen";
+    p.dy += r(sin(t, 0.5) * 2);
+    p.dreh = sin(t, 0.5) * 6;
+    p.armR = "oben";
+    p.augen = "froh";
+    p.mund = "breit";
+    p.fx.push(fx("wind"), fx("tempo", { rechts: true }));
+  }, { per: 4 });
+  neu("Barett zurechtrücken", K1, (p, t) => {
+    const q = ph(t, 3);
+    p.props.push(pr("barett", "kopf", q < 0.4 ? r(sin(t, 2) * 1) : 0, 1));
+    p.armL = p.armR = q < 0.4 ? "kopf" : "unten";
+    p.augen = q < 0.4 ? "halb" : "froh";
+    p.mund = q < 0.4 ? "flach" : "schief";
+    if (q > 0.4 && q < 0.6) { p.fx.push(fx("funkeln", { n: 2 })); p.bh += 1; }
+  }, { per: 3 });
+  neu("Appell", K1, (p, t) => {
+    const k = takt(t, 1, 3);
+    p.props.push(pr("helm", "kopf", 0, 1));
+    p.klon = 16; p.klonAlpha = 0.85;
+    p.bh += 1;
+    p.augen = "halb";
+    p.mund = k === 2 ? "offen" : "flach";
+    if (k === 2) { p.armR = "kopf"; p.fx.push(fx("text", { txt: "HIER", y: 6 })); }
+  }, { per: 3 });
+  neu("Sturmangriff", K1, (p, t) => {
+    gehen(p, t, 4, { hub: 2, arme: true });
+    p.props.push(pr("helm", "kopf", 0, 1), pr("gewehr", "vorne", 10, -1));
+    p.armL = p.armR = "vorne";
+    p.dreh = -10 * v(p);
+    p.augen = "wuetend";
+    p.mund = "gross";
+    p.fx.push(fx("tempo", { rechts: !p.spiegel }), fx("text", { txt: "HURRA", y: 6 }));
+  }, { laeuft: 26, per: 0.5 });
+  neu("Bombe entschärfen", K1, (p, t) => {
+    const q = ph(t, 6);
+    p.beine = "sitzen";
+    p.props.push(pr("kiste", "boden", 8, 0));
+    p.armR = "raus";
+    p.aR[1] = 2;
+    p.fx.push(fx("schweiss"), fx("text", { txt: "0:" + String(59 - Math.floor(q * 59)).padStart(2, "0"), x: 34, y: 18, farbe: "#d9443a" }));
+    p.augen = q < 0.85 ? "schlitz" : "froh";
+    p.mund = q < 0.85 ? "zaehne" : "breit";
+    zittern(p, t, q < 0.85 ? 0.3 : 0);
+    if (q > 0.85) p.fx.push(fx("text", { txt: "PUH", y: 6 }));
+  }, { per: 6 });
   const zaehler = {};
   A.forEach((a) => {
     const basis = a.n.toLowerCase().replace(/ä/g, "ae").replace(/ö/g, "oe").replace(/ü/g, "ue").replace(/ß/g, "ss").replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
