@@ -2540,6 +2540,7 @@
   neu("Flüstern", K1, (p, t) => { p.armR = "mund"; p.aR[0] = 2; p.dreh = 6; p.bh -= 1; p.fx.push(fx("text", { txt: "PSST", x: 32, y: 16 })); p.augen = "seitlich"; p.ex = takt(t, 1, 2) ? 1 : -1; }, { per: 2 });
   neu("Laden", K1, (p, t) => { p.fx.push(fx("laden")); p.augen = "punkt"; p.mund = "flach"; atmen(p, t); }, { per: 2 });
   neu("Fehler 404", K1, (p, t) => { p.augen = "x"; p.glitch = ph(t, 2) < 0.3 ? 0.4 : 0.1; p.fx.push(fx("text", { txt: "404", farbe: "#d9443a", blink: true })); p.mund = "flach"; p.dreh = ph(t, 2) < 0.3 ? 5 : 0; }, { per: 2 });
+  neu("Hallo Lucas", K1, (p, t) => { const q = ph(t, 1); p.armR = q < 0.5 ? "oben" : "hoch"; p.augen = "froh"; p.mund = "breit"; p.dy -= takt(t, 2, 2); p.fx.push(fx("text", { txt: "HI LUCAS", x: 32, y: 14 })); }, { per: 1 });
   const zaehler = {};
   A.forEach((a) => {
     const basis = a.n.toLowerCase().replace(/ä/g, "ae").replace(/ö/g, "oe").replace(/ü/g, "ue").replace(/ß/g, "ss").replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
